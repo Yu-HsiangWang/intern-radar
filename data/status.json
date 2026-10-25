@@ -1,0 +1,422 @@
+{
+ "updatedAt": "2026-10-25T21:23:46Z",
+ "counts": {
+  "total": 447,
+  "core": 145,
+  "related": 213,
+  "stretch": 89,
+  "newToday": 3,
+  "official": 199,
+  "taiwan": 6
+ },
+ "sources": [
+  {
+   "name": "SimplifyJobs",
+   "ok": true,
+   "fetched": 280,
+   "kept": 280,
+   "error": "",
+   "seconds": 0.6
+  },
+  {
+   "name": "NVIDIA",
+   "ok": true,
+   "fetched": 800,
+   "kept": 21,
+   "matchedSimplify": 9,
+   "error": "",
+   "seconds": 48.1
+  },
+  {
+   "name": "Intel",
+   "ok": true,
+   "fetched": 496,
+   "kept": 3,
+   "matchedSimplify": 2,
+   "error": "",
+   "seconds": 27.2
+  },
+  {
+   "name": "Marvell",
+   "ok": true,
+   "fetched": 274,
+   "kept": 11,
+   "matchedSimplify": 14,
+   "error": "",
+   "seconds": 12.5
+  },
+  {
+   "name": "Micron",
+   "ok": true,
+   "fetched": 800,
+   "kept": 0,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 30.3
+  },
+  {
+   "name": "Analog Devices",
+   "ok": true,
+   "fetched": 501,
+   "kept": 4,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 24.3
+  },
+  {
+   "name": "Broadcom",
+   "ok": true,
+   "fetched": 88,
+   "kept": 0,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 3.3
+  },
+  {
+   "name": "Samsung Semiconductor",
+   "ok": true,
+   "fetched": 249,
+   "kept": 0,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 16.1
+  },
+  {
+   "name": "Hewlett Packard Enterprise",
+   "ok": true,
+   "fetched": 800,
+   "kept": 26,
+   "matchedSimplify": 9,
+   "error": "",
+   "seconds": 52.5
+  },
+  {
+   "name": "GlobalFoundries",
+   "ok": true,
+   "fetched": 442,
+   "kept": 3,
+   "matchedSimplify": 7,
+   "error": "",
+   "seconds": 20.4
+  },
+  {
+   "name": "Cadence",
+   "ok": true,
+   "fetched": 185,
+   "kept": 5,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 9.4
+  },
+  {
+   "name": "Altera",
+   "ok": true,
+   "fetched": 90,
+   "kept": 0,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 3.2
+  },
+  {
+   "name": "SiFive",
+   "ok": true,
+   "fetched": 43,
+   "kept": 1,
+   "matchedSimplify": 1,
+   "error": "",
+   "seconds": 2.2
+  },
+  {
+   "name": "NXP",
+   "ok": true,
+   "fetched": 337,
+   "kept": 14,
+   "matchedSimplify": 1,
+   "error": "",
+   "seconds": 18.3
+  },
+  {
+   "name": "Ambarella",
+   "ok": true,
+   "fetched": 19,
+   "kept": 6,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 0.4
+  },
+  {
+   "name": "Ciena",
+   "ok": true,
+   "fetched": 77,
+   "kept": 0,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 4.2
+  },
+  {
+   "name": "Qualcomm",
+   "ok": true,
+   "fetched": 10,
+   "kept": 0,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 0.7
+  },
+  {
+   "name": "Microsoft",
+   "ok": true,
+   "fetched": 10,
+   "kept": 0,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 0.4
+  },
+  {
+   "name": "AMD",
+   "ok": true,
+   "fetched": 109,
+   "kept": 5,
+   "matchedSimplify": 5,
+   "error": "",
+   "seconds": 1.6
+  },
+  {
+   "name": "Amazon",
+   "ok": true,
+   "fetched": 12,
+   "kept": 1,
+   "matchedSimplify": 4,
+   "error": "",
+   "seconds": 4.4
+  },
+  {
+   "name": "Google",
+   "ok": true,
+   "fetched": 9,
+   "kept": 2,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 2.3
+  },
+  {
+   "name": "Apple",
+   "ok": true,
+   "fetched": 25,
+   "kept": 2,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 2.2
+  },
+  {
+   "name": "Meta",
+   "ok": false,
+   "fetched": 0,
+   "kept": 0,
+   "error": "HTTPError: 400 Client Error: Bad Request for url: https://www.metacareers.com/jobs?q=ASIC%20intern",
+   "seconds": 0.2
+  },
+  {
+   "name": "Tesla",
+   "ok": false,
+   "fetched": 0,
+   "kept": 0,
+   "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.tesla.com/cua-api/apps/careers/state",
+   "seconds": 0.2
+  },
+  {
+   "name": "Arm",
+   "ok": true,
+   "fetched": 196,
+   "kept": 19,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 2.5
+  },
+  {
+   "name": "Texas Instruments",
+   "ok": true,
+   "fetched": 100,
+   "kept": 3,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 1.8
+  },
+  {
+   "name": "onsemi",
+   "ok": true,
+   "fetched": 100,
+   "kept": 0,
+   "matchedSimplify": 1,
+   "error": "",
+   "seconds": 1.7
+  },
+  {
+   "name": "Western Digital",
+   "ok": true,
+   "fetched": 85,
+   "kept": 1,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 0.6
+  },
+  {
+   "name": "Sandisk",
+   "ok": true,
+   "fetched": 0,
+   "kept": 0,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 0.4
+  },
+  {
+   "name": "Cirrus Logic",
+   "ok": true,
+   "fetched": 123,
+   "kept": 5,
+   "matchedSimplify": 2,
+   "error": "",
+   "seconds": 1.2
+  },
+  {
+   "name": "Astera Labs (Greenhouse asteraearlycareer2027)",
+   "ok": true,
+   "fetched": 91,
+   "kept": 26,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 0.2
+  },
+  {
+   "name": "Tenstorrent (Greenhouse tenstorrentuniversity)",
+   "ok": true,
+   "fetched": 12,
+   "kept": 3,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 0.1
+  },
+  {
+   "name": "Tenstorrent (Greenhouse tenstorrent)",
+   "ok": true,
+   "fetched": 119,
+   "kept": 0,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 0.1
+  },
+  {
+   "name": "Groq (Greenhouse groq)",
+   "ok": false,
+   "fetched": 0,
+   "kept": 0,
+   "error": "HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/groq/jobs",
+   "seconds": 0.1
+  },
+  {
+   "name": "Lightmatter (Greenhouse lightmatter)",
+   "ok": true,
+   "fetched": 61,
+   "kept": 0,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 0.1
+  },
+  {
+   "name": "SambaNova (Greenhouse sambanovasystems)",
+   "ok": true,
+   "fetched": 61,
+   "kept": 0,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 0.1
+  },
+  {
+   "name": "Samsung Research America (Greenhouse samsungresearchamericainternship)",
+   "ok": true,
+   "fetched": 1,
+   "kept": 0,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 0.1
+  },
+  {
+   "name": "Ayar Labs (Greenhouse ayarlabs)",
+   "ok": false,
+   "fetched": 0,
+   "kept": 0,
+   "error": "HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/ayarlabs/jobs",
+   "seconds": 0.1
+  },
+  {
+   "name": "xAI (Greenhouse xai)",
+   "ok": true,
+   "fetched": 298,
+   "kept": 0,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 0.1
+  },
+  {
+   "name": "Anthropic (Greenhouse anthropic)",
+   "ok": true,
+   "fetched": 682,
+   "kept": 0,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 0.1
+  },
+  {
+   "name": "Etched",
+   "ok": true,
+   "fetched": 116,
+   "kept": 6,
+   "matchedSimplify": 1,
+   "error": "",
+   "seconds": 0.3
+  },
+  {
+   "name": "d-Matrix",
+   "ok": true,
+   "fetched": 42,
+   "kept": 0,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 0.1
+  },
+  {
+   "name": "MatX",
+   "ok": true,
+   "fetched": 41,
+   "kept": 0,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 0.0
+  },
+  {
+   "name": "Cerebras",
+   "ok": true,
+   "fetched": 122,
+   "kept": 0,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 0.1
+  },
+  {
+   "name": "OpenAI",
+   "ok": true,
+   "fetched": 793,
+   "kept": 0,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 0.6
+  },
+  {
+   "name": "104 人力銀行（台灣）",
+   "ok": false,
+   "fetched": 0,
+   "kept": 0,
+   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+   "seconds": 1.6
+  }
+ ]
+}
