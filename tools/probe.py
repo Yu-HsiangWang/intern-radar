@@ -76,3 +76,4 @@ tryit("microsoft", lambda: eightfold("apply.careers.microsoft.com", "microsoft.c
 tryit("google", lambda: plain("GOOGLE", "https://www.google.com/about/careers/applications/jobs/results/?employment_type=INTERN&location=United%20States&q=hardware"))
 tryit("apple", lambda: plain("APPLE", "https://jobs.apple.com/en-us/search?location=united-states-USA&team=internships-STDNT-INTRN"))
 tryit("104", lambda: plain("104", "https://www.104.com.tw/jobs/search/list?ro=0&kwop=7&keyword=%E6%9A%91%E6%9C%9F%E5%AF%A6%E7%BF%92&order=15&asc=0&page=1&mode=s&jobsource=2018indexpoc"))
+# rerun 2026-10-25T21:28:01Z

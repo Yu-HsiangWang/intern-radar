@@ -7,6 +7,13 @@ on:
     paths:
       - "tools/**"
 
+permissions:
+  contents: write
+
+concurrency:
+  group: scan
+  cancel-in-progress: false
+
 jobs:
   probe:
     runs-on: ubuntu-latest
@@ -17,4 +24,12 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - run: python tools/probe.py
+      - run: mkdir -p debug && python tools/probe.py > debug/probe.txt 2>&1 || true
+      - name: Commit diagnostics
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add debug
+          git diff --cached --quiet && exit 0
+          git commit -m "Probe output $(date -u +%FT%TZ)"
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
