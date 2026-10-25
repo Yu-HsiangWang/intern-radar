@@ -1,0 +1,143 @@
+
+===== ARM HTTP 200 application/json; charset=utf-8
+              <section id="search-results-list">                      <ul class="list-reset" id="search-results-jobs" data-results-count="196"> <li class="job-card fs-start fs-middle fs-container custom-row-gap-1">                                 <a class="job-card__title fs-11 fs-m-11" href="/job/sophia-antipolis/physical-design-intern/33099/101742818272" data-job-id="101742818272">Physical Design Intern</a>                                                                              <span class="job-card__intro">Explore physical implementation performance push by analysing timing correlation between the main physical implementation steps.</span>                                                                                                                       <span class="location">Sophia Antipolis, France</span>                                             <span class="category">Multiple categories</span>                                     <button type="button" class="js-save-job-btn button" data-job-id="101742818272" data-org-id="33099"><span class="sr-only">Save job</span></button>                              </li> <li class="job-card fs-start fs-middle fs-container custom-row-gap-1">                                 <a class="job-card__title fs-11 fs-m-11" href="/job/budapest/agile-project-management-intern/33099/101856114656" data-job-id="101856114656">Agile Project Management Intern</a>                                                                              <span class="job-card__intro">Drive Agile project delivery by managing Jira boards, tracking priorities, improving workflows, facilitating team collaboration, and providing clear progress updates across global engineering teams.</span>                                               
+
+===== WORKDAY Micron q='intern': HTTP 200
+   total: 3124  facets: ['timeType', 'workerSubType', 'jobFamilyGroup', 'locationMainGroup']
+    PDE NPI PWF Process Engineer | Taichung - Fab 16, Taiwan | /job/Taichung---Fab-16-Taiwan/PDE-NPI-PWF-Process-Engineer_JR105575-1 | Posted 30+ Days Ago
+    半導体製造 EUVフォトマスク検査・管理スタッフ（技術職） | Hiroshima - Fab 15, Japan | /job/Hiroshima---Fab-15-Japan/-EUV---_JR101216 | Posted 30+ Days Ago
+    Process Control System Engineer | Hyderabad - Phoenix Aquila, India | /job/Hyderabad---Phoenix-Aquila-India/Process-Control-System-Engineer_JR105476-1 | Posted Today
+    Engineer, Equipment Development - PCVD | Fab 10N/X, Singapore | /job/Fab-10NX-Singapore/Engineer--Equipment-Development---PCVD_JR113533 | Posted Today
+    DRAM Principal Design Verification Engineer | Boise, ID - Main Site | /job/Boise-ID---Main-Site/DRAM-Principal-Design-Verification-Engineer_JR115446 | Posted Yesterday
+    Engineer Lab Lead, Analytical Chemistry Lab | Boise, ID - Main Site | /job/Boise-ID---Main-Site/Engineer-Lab-Lead--Analytical-Chemistry-Lab_JR112547 | Posted 2 Days Ago
+    Senior Design Verification Engineer/Architect, HBM | Richardson, TX | /job/Richardson-TX/Staff-Engineer--HBM-Verification-Architecture_JR94769 | Posted 2 Days Ago
+    Talent Acquisition - Contract Recruiter | California - Remote (D) | /job/California---Remote-D/Talent-Acquisition---Contract-Recruiter_JR111460 | Posted 2 Days Ago
+    New College Grad: Financial Analyst II | Boise, ID - Main Site | /job/Boise-ID---Main-Site/New-College-Grad--Financial-Analyst-II_JR115102 | Posted 2 Days Ago
+    Senior Dry Etch Process Engineer | Boise, ID - ID1 | /job/Boise-ID---ID1/Senior-Dry-Etch-Process-Engineer_JR101256 | Posted 2 Days Ago
+    Intern - ATE Process Engineer, PCVD ID1 | Boise, ID - Main Site | /job/Boise-ID---Main-Site/Intern---ATE-Process-Engineer--PCVD-ID1_JR115032 | Posted 2 Days Ago
+    Senior AI Automation Data Engineer | Boise, ID - Main Site | /job/Boise-ID---Main-Site/Senior-AI-Automation-Data-Engineer_JR111454 | Posted 2 Days Ago
+    Sr Design Enablement, CAD | 3 Locations | /job/Richardson-TX/Sr-Design-Enablement--CAD_JR113311 | Posted 2 Days Ago
+    ASIC Analog Layout Engineer | Minneapolis, MN | /job/Minneapolis-MN/ASIC-Analog-Layout-Engineer_JR114833 | Posted 2 Days Ago
+    Principal Product Line Manager | 2 Locations | /job/Folsom-CA/Principal-Product-Line-Manager_JR114920 | Posted 2 Days Ago
+    Staff Product Line Manager | 2 Locations | /job/Folsom-CA/Staff-Product-Line-Manager_JR114922 | Posted 2 Days Ago
+    Process Integration DRAM, PI Engineer | Boise, ID - Main Site | /job/Boise-ID---Main-Site/Process-Integration-DRAM--PI-Engineer_JR115848 | Posted 2 Days Ago
+    NCG DRAM Design Technology Layout Engineer | Jalisco, Mexico | /job/Jalisco-Mexico/DRAM-Design-Technology-Layout-Engineer_JR101718 | Posted 2 Days Ago
+    Director, Sales Strategy and Planning | San Jose, CA | /job/San-Jose-CA/Director--Sales-Strategy-and-Planning_JR106527 | Posted 2 Days Ago
+    HBM SoC Physical Design Engineer | 2 Locations | /job/Folsom-CA/HBM-SoC-Physical-Design-Engineer_JR115396 | Posted 2 Days Ago
+   facet timeType [('Full time', '0674b5cea88e014f9e0580f85d236000', 2828), ('Part time', '0674b5cea88e0145a3d77ff85d235f00', 8)]
+   facet workerSubType [('Contractor Type 1', 'bff7a31dbdd301e10c844d8c490118f7', 2), ('Contractor Type 2', 'bff7a31dbdd30185d9464d8c490117f7', 1), ('Fixed Term (Fixed Term)', 'bff7a31dbdd3015b691eafb41a01d081', 22), ('Fixed Term Benefits (Fixed Term)', 'bff7a31dbdd301441f9caeb41a01cd81', 3), ('Intern - Regular (Fixed Term)', 'bff7a31dbdd3016722f3aeb41a01cf81', 192), ('Intern - Trainee (Fixed Term)', 'bff7a31dbdd301cd53c8aeb41a01ce81', 2), ('Regular', 'bff7a31dbdd301c91773aeb41a01cc81', 2902)]
+   facet jobFamilyGroup [('Accounting/Finance', 'bff7a31dbdd3014554cc8d0caa012262', 11), ('Clerical', 'bff7a31dbdd301e388578c0caa012062', 63), ('Engineer-Facilities', 'bff7a31dbdd301a600c9820caa010e62', 212), ('Engineer-ProdRelated', 'bff7a31dbdd301db168e7e0caa010662', 1942), ('Executive', 'bff7a31dbdd3016d8b427b0caa010462', 1), ('Human Resources', 'bff7a31dbdd3018a8003880caa011862', 35), ('Information Systems', 'bff7a31dbdd301db8c6a850caa011462', 172), ('Interns', 'bff7a31dbdd3010ca04a790caa01fe61', 199), ('Legal', 'bff7a31dbdd3015a383c920caa012e62', 7), ('Material/Purchasing', 'bff7a31dbdd301d55b0a8f0caa012562', 60), ('Prod-Facilities', 'bff7a31dbdd301e56151860caa011662', 3), ('Production', 'bff7a31dbdd301ad4d0d910caa012c62', 63)]
+   facet locationMainGroup [('Locations', None, None)]
+   detail keys: ['canApply', 'country', 'externalUrl', 'id', 'includeResumeParsing', 'jobDescription', 'jobPostingId', 'jobPostingSiteId', 'jobReqId', 'jobRequisitionLocation', 'location', 'posted', 'postedOn', 'questionnaireId', 'secondaryQuestionnaireId', 'startDate', 'timeType', 'title']
+   detail location: Taichung - Fab 16, Taiwan | additional: None | startDate: 2026-09-10 | country: Taiwan
+
+===== WORKDAY NVIDIA q='intern': HTTP 200
+   total: 1101  facets: ['jobFamilyGroup', 'workerSubType', 'timeType', 'locationMainGroup']
+    DFT Intern - 2027 | China, Shanghai | /job/China-Shanghai/DFT-Intern---2027_JR2027176 | Posted 12 Days Ago
+    Custom SOC Intern - 2027 | China, Shanghai | /job/China-Shanghai/Custom-SOC-Intern---2027_JR2024692 | Posted 30+ Days Ago
+    Director, International Tax Planning | US, CA, Santa Clara | /job/US-CA-Santa-Clara/Director--International-Tax-Planning_JR2026240 | Posted 27 Days Ago
+    Software Engineering Intern - 2027 | China, Shanghai | /job/China-Shanghai/Software-Engineering-Intern---2027_JR2026972 | Posted 4 Days Ago
+    Computer Architecture Intern - 2027 | 2 Locations | /job/China-Shanghai/Computer-Architecture-Intern---2027_JR2026052 | Posted 2 Days Ago
+    Research Intern, Robotics - 2027 | Singapore, Pasir Panjang | /job/Singapore-Pasir-Panjang/Research-Intern--Robotics---2027_JR2028499 | Posted Yesterday
+    Applied Deep Learning PhD Research Intern, Reinforcement Learning for LLMs - Fall 2026 | US, CA, Santa Clara | /job/US-CA-Santa-Clara/Applied-Deep-Learning-PhD-Research-Intern--Reinforcement-Learning-for-LLMs---Fall-2026_JR2012398 | Posted 13 Days Ago
+    PhD Research Intern, Generative AI - 2026 | US, CA, Santa Clara | /job/US-CA-Santa-Clara/PhD-Research-Intern--Generative-AI---2026_JR2016035 | Posted 13 Days Ago
+    System Design Intern, LDE - 2027 | Taiwan, Taipei | /job/Taiwan-Taipei/System-Design-Intern--LDE---2027_JR2021952 | Posted 30+ Days Ago
+    System Design Engineer - LDE (RDSS Intern) | Taiwan, Taipei | /job/Taiwan-Taipei/System-Design-Engineer---LDE--RDSS-Intern-_JR2021878 | Posted 30+ Days Ago
+    Software Engineering Intern, NCCL - 2026 | 2 Locations | /job/China-Shanghai/Software-Engineering-Intern--NCCL---2026_JR2022645 | Posted 30+ Days Ago
+    NVIDIA 2027 Internships: Hardware Verification | US, CA, Santa Clara | /job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Hardware-Verification_JR2023500 | Posted 3 Days Ago
+    NVIDIA 2027 Internships: Digital Circuit Design | US, CA, Santa Clara | /job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Digital-Circuit-Design_JR2023504 | Posted 3 Days Ago
+    NVIDIA 2027 Internships: Hardware ASIC Design | US, CA, Santa Clara | /job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Hardware-ASIC-Design_JR2023486 | Posted 3 Days Ago
+    NVIDIA 2027 Internships: Hardware Design for Test (DFT) | US, CA, Santa Clara | /job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Hardware-Design-for-Test--DFT-_JR2023487-1 | Posted 3 Days Ago
+    NVIDIA 2027 Internships: Systems Software Engineering | US, CA, Santa Clara | /job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Systems-Software-Engineering_JR2023492 | Posted 3 Days Ago
+    NVIDIA 2027 Internships: Autonomous Vehicles and Robotics | US, CA, Santa Clara | /job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Autonomous-Vehicles-and-Robotics_JR2023496 | Posted 13 Days Ago
+    NVIDIA 2027 Internships: Deep Learning Computer Architecture | US, CA, Santa Clara | /job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Deep-Learning-Computer-Architecture_JR2023491 | Posted 3 Days Ago
+    NVIDIA 2027 Internships: Computer Architecture | US, CA, Santa Clara | /job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Computer-Architecture_JR2023489 | Posted 3 Days Ago
+    NVIDIA 2027 Internships: Software Engineering | US, CA, Santa Clara | /job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Software-Engineering_JR2023495 | Posted 13 Days Ago
+   facet jobFamilyGroup [('Engineering', '0c40f6bd1d8f10ae43ffaefd46dc7e78', 498), ('Univ Employment', '0c40f6bd1d8f10ae43ffda1e8d447e94', 197), ('Sales', '0c40f6bd1d8f10ae43ffcac5bbec7e90', 180), ('Program Manager', '0c40f6bd1d8f10ae43ffc668c6847e8c', 52), ('Operations', '0c40f6bd1d8f10ae43ffc3fc7d8c7e8a', 40), ('Marketing', '0c40f6bd1d8f10ae43ffc19725ec7e88', 28), ('Professional Services', 'e8bdc341a93101bd5f4d2b0a1c005e36', 26), ('Finance', '0c40f6bd1d8f10ae43ffb5dd06f47e7e', 24), ('Research', '0c40f6bd1d8f10ae43ffc8817cf47e8e', 22), ('IT - Information Technology', '0c40f6bd1d8f10ae43ffbd1459047e84', 17), ('Business Development', '0c40f6bd1d8f10ae43ffac5fdfac7e76', 5), ('Legal', '0c40f6bd1d8f10ae43ffbf4412147e86', 4)]
+   facet workerSubType [('Regular Employee', '0c40f6bd1d8f10adf6dae161b1844a15', 806), ('Intern (Fixed Term)', '0c40f6bd1d8f10adf6dae42e46d44a17', 196), ('Management', '0c40f6bd1d8f10adf6dae2cd57444a16', 69), ('New College Graduate', 'ab40a98049581037a3ada55b087049b7', 28), ('Regular Employee (Fixed Term)', 'cc40d60d614c01809d56fe967144ce2c', 2)]
+   facet timeType [('Full time', '5509c0b5959810ac0029943377d47364', 1099), ('Part time', '5509c0b5959810ac00299430e7947363', 2)]
+   facet locationMainGroup [('Location Type', None, None), ('Locations', None, None), ('Sites', None, None)]
+   detail keys: ['canApply', 'country', 'externalUrl', 'id', 'includeResumeParsing', 'jobDescription', 'jobPostingId', 'jobPostingSiteId', 'jobReqId', 'jobRequisitionLocation', 'location', 'posted', 'postedOn', 'questionnaireId', 'startDate', 'timeType', 'title']
+   detail location: China, Shanghai | additional: None | startDate: 2026-10-13 | country: China
+
+===== WORKDAY Broadcom q='intern': HTTP 200
+   total: 88  facets: ['timeType', 'workerSubType', 'jobFamilyGroup', 'locationMainGroup']
+    Mechanical Engineer Supporting ASIC Test | 2 Locations | /job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/Mechanical-Engineer-Supporting-ASIC-Test_R027501 | Posted 2 Days Ago
+    Solution Engineer - ValueOps | 34 Locations | /job/USA-OH-Remote-Location/Solution-Engineer---ValueOps_R027294 | Posted 2 Days Ago
+    Core Distributed Systems Database Engineer | USA-CA - Promontory D | /job/USA-CA---Promontory-D/Platform-Engineer---VCF-Networking_R027365 | Posted 2 Days Ago
+    ASIC Package Design Project Manager | USA-Colorado-Fort Collins-4380 Ziegler Road | /job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/ASIC-Package-Design-Project-Manager_R027144 | Posted 3 Days Ago
+    Global Solution Architect - NetOps - Remote | 34 Locations | /job/USA-IL-Remote-Location/Global-Solution-Architect---NetOps---Remote_R027400 | Posted 4 Days Ago
+    Global Solution Architect - ValueOps - Remote | 24 Locations | /job/USA-OH-Remote-Location/Global-Solution-Architect---ValueOps---Remote_R027399 | Posted 4 Days Ago
+    Global Solution Architect - Automation - Remote | 30 Locations | /job/USA-IL-Remote-Location/Global-Solution-Architect---Automation---Remote_R027402 | Posted 4 Days Ago
+    Principal Forward Deployed Engineer – AI & Developer Platform | CAN-Ontario Remote Location | /job/CAN-Ontario-Remote-Location/Principal-Forward-Deployed-Engineer---AI---Developer-Platform_R027411 | Posted 4 Days Ago
+    R&D Materials/Procurement Buyer | Germany-Regensburg | /job/Germany-Regensburg/R-D-Materials-Procurement-Buyer-ICB2_R026854 | Posted 5 Days Ago
+    Substrate Engineer | Taiwan-Hsinchu-Puding Road | /job/Taiwan-Hsinchu-Puding-Road/Substrate-Engineer_R027339 | Posted 6 Days Ago
+    ASIC Package Design Engineer | 3 Locations | /job/USA-CA-San-Jose-Innovation-Drive/ASIC-Package-Design-Engineer_R027439 | Posted 6 Days Ago
+    Senior Product Owner | 2 Locations | /job/USA-TX-Plano-Legacy-Drive-Suite-700/Senior-Product-Owner_R027403 | Posted 6 Days Ago
+    Package Design Engineer | Singapore-Yishun | /job/Singapore-Yishun/Package-Design-Engineer_R027022 | Posted 9 Days Ago
+    R&D Staff Software Engineer | 2 Locations | /job/USA-PA-Pittsburgh-Holiday-Drive/R-D-Staff-Software-Engineer_R027383 | Posted 10 Days Ago
+    Forward Deployed Engineer (Principal) | 6 Locations | /job/USA-UT-Remote-Location/Forward-Deployed-Engineer--Principal-_R027000 | Posted 10 Days Ago
+    Client Services Consultant Data Management | Belgium-Remote Location | /job/Belgium-Remote-Location/Client-Services-Consultant-Data-Management_R026080 | Posted 10 Days Ago
+    Marketing Operations Manager | USA-CA-Remote Location | /job/USA-CA-Remote-Location/Marketing-Operations-Manager_R026976 | Posted 11 Days Ago
+    MSD Support Manager | 5 Locations | /job/USA-TX-Plano-Legacy-Drive-Suite-700/MSD-Support-Manager_R026755 | Posted 12 Days Ago
+    Platforms & Lab Operations engineer | USA-CA San Jose Innovation Drive | /job/USA-CA-San-Jose-Innovation-Drive/Platforms---Lab-Operations-engineer_R027354 | Posted 13 Days Ago
+    Reliability Engineer | USA-Colorado-Fort Collins-4380 Ziegler Road | /job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/Reliability-Engineer_R027272 | Posted 13 Days Ago
+   facet timeType [('Full time', '4f38c5b5735041888390f3ec0e513aec', 88)]
+   facet workerSubType [('Regular', '26b4bc832d7242a1997c6a34398afa82', 88)]
+   facet jobFamilyGroup [('Administration', '1134c2e386fa45bc98d64be217ff3474', 1), ('Finance', '8c140e850893422fb2ab758c6a3728e8', 1), ('Manufacturing', '2fb6748c5f5a456c9008ebfbac531490', 2), ('Marketing', '8c270e495f3c48cfbb1ce3dc2b4e1891', 7), ('R&D', '7430f1a1df52470a87028736ca41b235', 56), ('Sales', 'ac3e903197484285b751ecf24133496b', 5), ('Services & Support', 'de67a1afb0184ff9a311cf4ea807f960', 16)]
+   facet locationMainGroup [('Locations', None, None)]
+   detail keys: ['additionalLocations', 'canApply', 'country', 'endDate', 'externalUrl', 'id', 'includeResumeParsing', 'jobDescription', 'jobPostingId', 'jobPostingSiteId', 'jobReqId', 'jobRequisitionLocation', 'location', 'posted', 'postedOn', 'questionnaireId', 'startDate', 'timeType', 'title']
+   detail location: USA-Colorado-Fort Collins-4380 Ziegler Road | additional: ['USA-CA San Jose Innovation Drive'] | startDate: 2026-10-23 | country: United States of America
+
+===== WORKDAY Samsung q='intern': HTTP 200
+   total: 249  facets: ['remoteType', 'Location_Country', 'hiringCompany', 'jobFamilyGroup', 'workerSubType', 'timeType', 'locationMainGroup']
+    Samsung’s Internship | Via Mike Bongiorno, Milano, Italy | /job/Via-Mike-Bongiorno-Milano-Italy/Samsung-s-Internship_R114528-1 | Posted 30+ Days Ago
+    2027 Summer Internship | 1530 FM 973 Taylor, TX, USA | /job/1530-FM-973-Taylor-TX-USA/XMLNAME-2027-Summer-Internship_R119158 | Posted 30+ Days Ago
+    Experienced Internal Auditor | 1530 FM 973 Taylor, TX, USA | /job/1530-FM-973-Taylor-TX-USA/Experienced-Internal-Auditor_R120686 | Posted 30+ Days Ago
+    Assistant Manager, Business Data Analyst (Korean Speaking) | Empire Tower, Bangkok, Thailand | /job/Empire-Tower-Bangkok-Thailand/Assistant-Manager--Business-Data-Analyst--Korean-Speaking-_R120641 | Posted 30+ Days Ago
+    Retail Operations Senior Executive | BITEXCO Financial Tower, Ho Chi Minh, Vietnam | /job/BITEXCO-Financial-Tower-Ho-Chi-Minh-Vietnam/Retail-Operations-Senior-Executive_R121233-1 | Posted 18 Days Ago
+    Head of People Austria & Switzerland | Giesshuebelstrasse 30, Zurich, Switzerland | /job/Giesshuebelstrasse-30-Zurich-Switzerland/Head-of-People-Austria---Switzerland_R121286 | Posted 13 Days Ago
+    Data Center Engineer | Mapletree Business City, Singapore, Singapore | /job/Mapletree-Business-City-Singapore-Singapore/Data-Center-Engineer_R120521 | Posted 30+ Days Ago
+    Servicetechniker (m/w/d) - Digital Radiography/ X-Ray | Eschborn, Germany Home Office | /job/Eschborn-Germany-Home-Office/Technical-Project-Manager---Service-Engineer-X-Ray_R118832 | Posted 18 Days Ago
+    Senior Manager, Customs Compliance Operations | 6555 Excellence Way, Plano, TX, USA | /job/6555-Excellence-Way-Plano-TX-USA/Manager--Customs-Compliance-Operations_R120897 | Posted 30+ Days Ago
+    Business Controlling Specialist – Marketing Budget (f/m/x) | Praterstrasse 31, Vienna, Austria | /job/Praterstrasse-31-Vienna-Austria/Business-Controlling-Specialist---Marketing-Budget--f-m-x-_R121156 | Posted 20 Days Ago
+    Working Student (m/f/d) - Accounting (Munich based) | Bavaria Towers, Munich, Germany | /job/Bavaria-Towers-Munich-Germany/Working-Student--m-f-d----Accounting--Munich-based-_R120002 | Posted 20 Days Ago
+    Principal Legal Counsel | 700 Pennsylvania Avenue, Suite 600, Washington DC, USA | /job/700-Pennsylvania-Avenue-Suite-600-Washington-DC-USA/Principal-Legal-Counsel_R121465 | Posted 6 Days Ago
+    Logistics Materials Management Professional | 12100 Samsung Blvd, Austin, TX, USA | /job/12100-Samsung-Blvd-Austin-TX-USA/Logistics-Materials-Management-Professional_R121103 | Posted 24 Days Ago
+    Marketing Manager (D2C/eStore) | Postepu, Warszawa, Poland | /job/Postepu-Warszawa-Poland/Marketing-Manager--D2C-_R121324 | Posted 10 Days Ago
+    Senior Specialist II, CS and Estore Omni Contact Centre Operations & Training (12 month contract) | 2050 Derry Rd W Mississauga, Canada | /job/2050-Derry-Rd-W-Mississauga-Canada/Senior-Specialist-II--CS-and-Estore-Omni-Contact-Centre-Operations---Training--12-month-contract-_R120375 | Posted 30+ Days Ago
+    Junior Cashback Analyst | Metroffice, Bucharest 2, Romania | /job/Metroffice-Bucharest-2-Romania/Junior-Cashback-Analyst_R120753 | Posted 26 Days Ago
+    Sales Manager, Data Center (Paris based) | Centre d'affaires la Boursidière, Le Plessis-Robinson, France | /job/Centre-daffaires-la-Boursidire-Le-Plessis-Robinson-France/Sales-Manager--Data-Center---Parise-based-_R118538 | Posted 25 Days Ago
+    2027 New Grad: Samsung Emerging Engineer Development Program | 1530 FM 973 Taylor, TX, USA | /job/1530-FM-973-Taylor-TX-USA/XMLNAME-2027-New-Grad--SEED--Program_R119156-1 | Posted 30+ Days Ago
+    Working Student (f/m/d), Talent Management (Munich based) | Bavaria Towers, Munich, Germany | /job/Bavaria-Towers-Munich-Germany/Working-Student--Talent-Management--Onsite-Munich-based-_R117907 | Posted 11 Days Ago
+    Workforce Management Partner | Metroffice, Bucharest 2, Romania | /job/Metroffice-Bucharest-2-Romania/Workforce-Management-Partner_R121056 | Posted 25 Days Ago
+   facet remoteType [('On-site', '0fee2666525710120f3e0f09e7730000', 184), ('Hybrid', '0fee2666525710120f3e0e6f0ce40000', 23), ('Remote', '0fee2666525710120f3e0f09e7730001', 5)]
+   facet Location_Country [('United States of America', 'bc33aa3152ec42d4995f4791a106ed09', 188), ('Germany', 'dcc5b7608d8644b3a93716604e78e995', 9), ('Canada', 'a30a87ed25634629aa6c3958aa2b91ea', 9), ('Singapore', '80938777cac5440fab50d729f9634969', 6), ('Thailand', '873d0f604e3b458c990cb4d83a5c0f14', 5), ('Brazil', '1a29bb1357b240ab99a2fa755cc87c0e', 5), ('United Kingdom', '29247e57dbaf46fb855b224e03170bc7', 5), ('Malaysia', '972dc4ba8d454bc0b893ff84b1529077', 5), ('France', '54c5b6971ffb4bf0b116fe7651ec789a', 3), ('India', 'c4f78be1a8f14da0ab49ce1162348a5e', 3), ('Romania', 'f2e609fe92974a55a05fc1cdc2852122', 2), ('Poland', '131d5ac7e3ee4d7b962bdc96e498e412', 2)]
+   facet hiringCompany [('Samsung Electronics America, Inc.', '189767dd6c9201b6d4407011a7296a83', 101), ('Samsung Austin Semiconductor, LLC.', '189767dd6c9201aedeefa811a729d283', 86), ('Samsung Electronics Canada, Inc.', '189767dd6c92013bf1588a11a7299a83', 9), ('SAMSUNG SEMICONDUCTOR EUROPE GMBH', '189767dd6c9201d5105dc711a7290a84', 6), ('SAMSUNG MALAYSIA ELECTRONICS (SME) SDN. BHD.', '189767dd6c92019f331c7f12a7295a85', 5), ('Thai Samsung Electronics Co., Ltd.', '189767dd6c920190658c6c12a7293a85', 5), ('Samsung Electronics UK Ltd', '189767dd6c9201ca9dafb911a729f283', 5), ('Samsung Eletronica Da Amazonia LTDA', '189767dd6c920104a78a6113a729f286', 5), ('Samsung Electronics Singapore Pte. Ltd.', '189767dd6c9201538cb44a12a729fa84', 4), ('Samsung Electronics GmbH', '189767dd6c9201c767abcb11a7291284', 4), ('Samsung R&D Institute India - Bangalore', '189767dd6c9201554f3e5312a7290a85', 3), ('Samsung Asia Pte. Ltd.', '9cc839290d3a014823f9f4c6071436a5', 2)]
+   facet jobFamilyGroup [('Marketing (JFG)', '189767dd6c9201a24f64d1a6db298dc7', 46), ('Sales (JFG)', '189767dd6c9201c6e5aee7a6db299bc7', 43), ('EHS (JFG)', '189767dd6c920162dfa8c4a6db2985c7', 38), ('R&D (JFG)', '189767dd6c9201b4198fe1a6db2997c7', 34), ('HR (JFG)', '189767dd6c92017e32a6caa6db2989c7', 14), ('Business Management (JFG)', '189767dd6c920111f76cbba6db297fc7', 11), ('QA & CS (JFG)', '189767dd6c9201fe2536dea6db2995c7', 10), ('Finance (JFG)', '189767dd6c9201cda9b8c7a6db2987c7', 9), ('Legal Affairs (JFG)', '189767dd6c9201a2cb4bcea6db298bc7', 8), ('Corporate Affairs (JFG)', '189767dd6c9201913284bea6db2981c7', 7), ('Production Engineering (JFG)', '189767dd6c9201d48510dba6db2993c7', 6), ('Procurement (JFG)', '189767dd6c92014f9161d7a6db2991c7', 6)]
+   facet workerSubType [('Regular', '189767dd6c9201c90a60ce9c2c297619', 224), ('Direct Outsourced', '189767dd6c9201ab5b6a33a42c298319', 11), ('Intern(Empl.)', '189767dd6c920145d5c3e59c2c297819', 8), ('Contractor (Fixed Term)', '189767dd6c920189af34e29c2c297719', 3), ('Affiliate', '189767dd6c9201223a72ec9c2c297a19', 2), ('Intern(CW)', '189767dd6c92017ca7ab47a42c298419', 1)]
+   facet timeType [('Full time', '02858ad19657019e8b031af2d6264900', 228), ('Part time', '02858ad1965701c3b2f019f2d6264800', 2)]
+   facet locationMainGroup [('Locations', None, None)]
+   detail keys: ['canApply', 'country', 'endDate', 'externalUrl', 'id', 'includeResumeParsing', 'jobDescription', 'jobPostingEndDateAsText', 'jobPostingId', 'jobPostingSiteId', 'jobReqId', 'jobRequisitionLocation', 'location', 'posted', 'postedOn', 'questionnaireId', 'remoteType', 'startDate', 'timeLeftToApply', 'timeType', 'title']
+   detail location: Via Mike Bongiorno, Milano, Italy | additional: None | startDate: 2026-02-16 | country: Italy
+
+===== EIGHTFOLD careers.qualcomm.com start=0 num=50: HTTP 403
+   keys: ['message']  count: None  n: 0
+
+===== EIGHTFOLD careers.qualcomm.com start=10 num=10: HTTP 403
+   keys: ['message']  count: None  n: 0
+
+===== EIGHTFOLD apply.careers.microsoft.com start=0 num=50: HTTP 403
+   keys: ['message']  count: None  n: 0
+
+===== EIGHTFOLD apply.careers.microsoft.com start=10 num=10: HTTP 403
+   keys: ['message']  count: None  n: 0
+
+===== GOOGLE: HTTP 200 text/html; charset=utf-8 len=1178000
+    <!doctype html><html lang="en-US" dir="ltr"><head><base href="https://www.google.com/about/careers/applications/"><link rel="preconnect" href="//www.gstatic.com"><meta name="referrer" content="origin"><script nonce="ow8vMexR8Kib_idVtGMp4g">window['ppConfig'] = {productName: 'HiringCportalFrontendUi'
+
+===== APPLE: HTTP 200 text/html; charset=utf-8 len=340107
+    <!doctype html> <html lang="en-US" dir="ltr"> <head>   <meta charset="utf-8" />   <title data-rh="true">Search Jobs - United States, Students: Internships - Jobs - Careers at Apple</title>   <meta data-rh="true" name="description" content="Explore all jobs at Apple. Search by keyword, location, and 
+
+===== 104: HTTP 200 text/html len=4180
+    <!DOCTYPE html> <html lang="zh-Hant-TW">   <head>     <!-- utility --> <meta charset="utf-8" /> <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <meta   name="viewport"   content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover
