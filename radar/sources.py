@@ -1,6 +1,7 @@
 """Company careers sites scanned every day. Each entry: (name, fetcher, args).
 A source that errors is reported on the board and skipped; the rest still run.
-Sites that refuse automated clients (e.g. Meta, Tesla careers) are not scraped; SimplifyJobs covers them.
+Sites that refuse automated clients (Meta and Tesla careers, the 104 job bank) are not scraped;
+SimplifyJobs covers the US ones.
 To add a company, add one line here.
 """
 import fetchers as F
@@ -66,5 +67,3 @@ for company, board in GREENHOUSE:
     SOURCES.append((f"{company} (Greenhouse {board})", F.greenhouse, (company, board)))
 for company, org in ASHBY:
     SOURCES.append((company, F.ashby, (company, org)))
-SOURCES.append(("104 人力銀行（台灣）", F.job104, (["暑期實習 IC設計", "暑期實習 數位IC", "暑期實習 驗證",
-                                                  "暑期實習 硬體", "實習生 晶片設計", "summer intern IC"],)))

@@ -111,7 +111,7 @@ def main():
             title = re.sub(r"\s+", " ", (it.get("title") or "")).strip()
             if not title or not rules.official_ok(title):
                 continue
-            region = rules.region_for(it.get("locations") or [])
+            region = rules.region_for(it.get("locations") or [], strict=True)
             if region is None:
                 continue
             tier, kws = rules.tier_for(title)

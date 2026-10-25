@@ -11,6 +11,8 @@ from urllib.parse import quote
 
 import requests
 
+import rules
+
 # Identify honestly; sites that refuse automated clients are left out rather than worked around.
 UA = "intern-radar/1.0 (+https://github.com/Yu-HsiangWang/intern-radar; daily job-posting digest)"
 S = requests.Session()
@@ -68,38 +70,79 @@ def _workday_posted(s):
     return ""
 
 
-def workday(company, host, tenant, site, queries=("intern",), max_pages=40):
-    out = {}
-    url = f"https://{host}/wday/cxs/{tenant}/{site}/jobs"
-    for q in queries:
-        offset, total = 0, None
-        while True:
-            r = S.post(url, json={"appliedFacets": {}, "limit": 20, "offset": offset, "searchText": q},
-                       headers={"Accept": "application/json", "Content-Type": "application/json"},
-                       timeout=TIMEOUT)
+def _intern_facets(payload):
+    """Pick the site's own intern categories (e.g. workerSubType "Intern (Fixed Term)")."""
+    pat = re.compile(r"intern|univ|student|co-?op|trainee", re.I)
+    for param in ("workerSubType", "jobFamilyGroup"):
+        for f in payload.get("facets") or []:
+            if f.get("facetParameter") != param:
+                continue
+            ids = [v.get("id") for v in (f.get("values") or []) if v.get("id") and pat.search(v.get("descriptor") or "")]
+            if ids:
+                return {param: ids}
+    return None
+
+
+def workday(company, host, tenant, site, max_pages=30, max_details=150):
+    """List intern postings on a Workday site, then read each relevant posting's detail page
+    for its exact locations and posting date."""
+    base = f"https://{host}/wday/cxs/{tenant}/{site}"
+    hdr = {"Accept": "application/json", "Content-Type": "application/json"}
+
+    def page(facets, text, offset):
+        r = S.post(base + "/jobs", json={"appliedFacets": facets, "limit": 20, "offset": offset, "searchText": text},
+                   headers=hdr, timeout=TIMEOUT)
+        r.raise_for_status()
+        return r.json()
+
+    first = page({}, "", 0)
+    facets = _intern_facets(first)
+    text = "" if facets else "intern"
+    facets = facets or {}
+    out, offset, total = {}, 0, None
+    while True:
+        j = page(facets, text, offset)
+        if total is None:
+            total = int(j.get("total") or 0)
+        posts = j.get("jobPostings") or []
+        for p in posts:
+            path = p.get("externalPath") or ""
+            if not path:
+                continue
+            parts = path.split("/")
+            seg = parts[2] if len(parts) > 3 else ""
+            bf = p.get("bulletFields") or []
+            out[path] = dict(company=company, title=p.get("title", ""), url=f"https://{host}/{site}{path}",
+                             locations=[x for x in (p.get("locationsText") or "", seg) if x],
+                             posted=_workday_posted(p.get("postedOn")), req=str(bf[0]) if bf else None)
+        offset += 20
+        if not posts or offset >= total or offset >= max_pages * 20:
+            break
+        time.sleep(PAUSE)
+
+    details = 0
+    for path, item in out.items():
+        if details >= max_details:
+            break
+        if not rules.official_ok(item["title"]) or not rules.tier_for(item["title"])[0]:
+            continue
+        try:
+            r = S.get(base + path, headers={"Accept": "application/json"}, timeout=TIMEOUT)
             r.raise_for_status()
-            j = r.json()
-            if total is None:
-                total = int(j.get("total") or 0)
-            posts = j.get("jobPostings") or []
-            for p in posts:
-                path = p.get("externalPath") or ""
-                if not path:
-                    continue
-                parts = path.split("/")
-                seg = parts[2] if len(parts) > 2 else ""
-                req = None
-                bf = p.get("bulletFields") or []
-                if bf:
-                    req = str(bf[0])
-                out[path] = dict(company=company, title=p.get("title", ""),
-                                 url=f"https://{host}/{site}{path}",
-                                 locations=[x for x in (p.get("locationsText") or "", seg) if x],
-                                 posted=_workday_posted(p.get("postedOn")), req=req)
-            offset += 20
-            if not posts or offset >= total or offset >= max_pages * 20:
-                break
-            time.sleep(PAUSE)
+            info = r.json().get("jobPostingInfo") or {}
+        except Exception:
+            continue
+        details += 1
+        locs = [info.get("location") or ""] + list(info.get("additionalLocations") or [])
+        country = (info.get("country") or {}).get("descriptor")
+        if country:
+            locs.append(country)
+        item["locations"] = [x for x in locs if x] or item["locations"]
+        if info.get("startDate"):
+            item["posted"] = str(info["startDate"])[:10]
+        if info.get("jobReqId"):
+            item["req"] = str(info["jobReqId"])
+        time.sleep(PAUSE / 2)
     return list(out.values())
 
 
@@ -145,37 +188,31 @@ def lever(company, account, region=""):
 
 
 # --------------------------------------------------------------------------- Eightfold (Qualcomm, Microsoft)
-def eightfold(company, host, domain, queries=("intern",), max_items=400):
+def eightfold(company, host, domain, queries=("intern",), max_items=300):
     out = {}
     for q in queries:
         start = 0
         while start < max_items:
-            url = (f"https://{host}/api/apply/v2/jobs?domain={domain}&start={start}&num=50"
-                   f"&query={quote(q)}&sort_by=timestamp")
-            r = S.get(url, headers={"Accept": "application/json"}, timeout=TIMEOUT)
-            positions = None
-            if r.status_code == 200:
-                try:
-                    positions = r.json().get("positions")
-                except ValueError:
-                    positions = None
-            if positions is None:
-                url = (f"https://{host}/api/pcsx/search?domain={domain}&query={quote(q)}"
-                       f"&location=&start={start}&sort_by=timestamp")
-                r = S.get(url, headers={"Accept": "application/json"}, timeout=TIMEOUT)
-                r.raise_for_status()
-                positions = (r.json().get("data") or {}).get("positions") or []
+            r = S.get(f"https://{host}/api/pcsx/search?domain={domain}&query={quote(q)}&location=&start={start}"
+                      f"&sort_by=timestamp", headers={"Accept": "application/json"}, timeout=TIMEOUT)
+            r.raise_for_status()
+            data = r.json().get("data") or {}
+            positions = data.get("positions") or []
+            if not positions:
+                break
             for p in positions:
                 pid = str(p.get("id"))
-                link = p.get("canonicalPositionUrl") or p.get("positionUrl") or f"/careers/job/{pid}"
+                link = p.get("positionUrl") or p.get("canonicalPositionUrl") or f"/careers/job/{pid}"
                 if link.startswith("/"):
                     link = f"https://{host}{link}"
-                locs = p.get("locations") or [p.get("location", "")]
-                posted = _from_ts(p.get("t_create") or p.get("postedTs") or p.get("t_update"))
+                locs = p.get("locations") or p.get("standardizedLocations") or [p.get("location", "")]
                 out[pid] = dict(company=company, title=p.get("name", ""), url=link,
-                                locations=[x for x in locs if x], posted=posted, req=pid)
-            start += 50
-            if len(positions) < 50:
+                                locations=[x for x in locs if isinstance(x, str) and x],
+                                posted=_from_ts(p.get("postedTs") or p.get("t_create") or p.get("creationTs")),
+                                req=pid)
+            start += len(positions)
+            count = data.get("count")
+            if count and start >= int(count):
                 break
             time.sleep(PAUSE)
     return list(out.values())
@@ -333,7 +370,7 @@ def apple(location="united-states-USA", pages=6):
 
 
 
-def arm(pages=3):
+def arm(pages=4):
     out = {}
     for page in range(1, pages + 1):
         url = ("https://careers.arm.com/search-jobs/results?ActiveFacetID=0&CurrentPage="
@@ -348,53 +385,19 @@ def arm(pages=3):
         except ValueError:
             text = r.text
         found = 0
-        for block in re.findall(r'<a[^>]+href="(/job/[^"]+)"[^>]*>(.*?)</a>', text, re.S):
-            href, inner = block
-            tm = re.search(r"<h2[^>]*>(.*?)</h2>", inner, re.S)
-            lm = re.search(r'class="job-location"[^>]*>(.*?)<', inner, re.S)
-            title = _strip(tm.group(1) if tm else inner)
-            if not title:
+        for card in re.findall(r'<li class="job-card[^"]*"[^>]*>(.*?)</li>', text, re.S):
+            a = re.search(r'<a[^>]+href="(/job/[^"]+)"[^>]*>(.*?)</a>', card, re.S)
+            if not a:
                 continue
+            href, title = a.group(1), _strip(a.group(2))
+            loc = re.search(r'<span class="location">(.*?)</span>', card, re.S)
             jid = href.rstrip("/").split("/")[-1]
-            if jid in out:
+            if not title or jid in out:
                 continue
             out[jid] = dict(company="Arm", title=title, url="https://careers.arm.com" + href,
-                            locations=[_strip(lm.group(1))] if lm else [], posted="", req=jid)
+                            locations=[_strip(loc.group(1))] if loc else [], posted="", req=jid)
             found += 1
         if not found:
             break
-        time.sleep(PAUSE)
-    return list(out.values())
-
-
-def job104(keywords):
-    """Taiwan's 104 job bank (MediaTek, Realtek, GUC, Novatek and others post 暑期實習 there)."""
-    out = {}
-    for kw in keywords:
-        ref = f"https://www.104.com.tw/jobs/search/?keyword={quote(kw)}"
-        items = None
-        r = S.get(f"https://www.104.com.tw/jobs/search/api/jobs?jobsource=index_s&keyword={quote(kw)}"
-                  f"&mode=s&order=15&page=1&pagesize=50", headers={"Referer": ref, "Accept": "application/json"},
-                  timeout=TIMEOUT)
-        if r.status_code == 200:
-            try:
-                d = r.json().get("data")
-                items = d if isinstance(d, list) else (d or {}).get("list")
-            except ValueError:
-                items = None
-        if items is None:
-            r = S.get(f"https://www.104.com.tw/jobs/search/list?ro=0&kwop=7&keyword={quote(kw)}&order=15&asc=0"
-                      f"&page=1&mode=s&jobsource=2018indexpoc", headers={"Referer": ref}, timeout=TIMEOUT)
-            r.raise_for_status()
-            items = (r.json().get("data") or {}).get("list") or []
-        for j in items:
-            link = (j.get("link") or {}).get("job") or ""
-            if link.startswith("//"):
-                link = "https:" + link
-            link = link.split("?")[0]
-            jid = link.rstrip("/").split("/")[-1] or str(j.get("jobNo"))
-            out[jid] = dict(company=j.get("custName", ""), title=j.get("jobName", ""), url=link,
-                            locations=[j.get("jobAddrNoDesc") or j.get("jobAddress") or "台灣"],
-                            posted=_from_text_date(str(j.get("appearDate") or "")), req=jid)
         time.sleep(PAUSE)
     return list(out.values())

@@ -35,6 +35,8 @@ EXCLUDE_TITLE = [
     r"technician", r"facilit", r"quality engineer", r"process engineer",
     r"\bmba\b", r"product manag", r"program manag", r"business", r"legal",
     r"clinical", r"biolog", r"construction", r"packaging",
+    r"\bservice engineer", r"system admin", r"administrator", r"process improvement", r"\bmanager\b",
+    r"customer", r"field application", r"\bfae\b", r"technical writer", r"talent", r"procurement",
     r"業務", r"行銷", r"財務", r"會計", r"人資", r"法務", r"助理", r"作業員",
 ]
 # Extra exclusions for postings that come straight from company sites
@@ -44,6 +46,7 @@ OFFICIAL_EXCLUDE = [
     r"(?<!under)graduate\b", r"new grad", r"new college grad", r"full[- ]time", r"\bmba\b",
     r"long[- ]term", r"\b1[26][- ]month", r"\bpey\b", r"apprentice",
     r"碩士", r"博士", r"研發替代役", r"\brdss\b",
+    r"\bjan(uary)?\b\W{0,3}(-|–|to)\W{0,3}\b(jun|june)\b", r"\b[mfw]/[mfw]/[dx]\b",
 ]
 INTERN_RE = re.compile(r"\bintern(s|ship|ships)?\b|\bco-?op\b|\bstudent\b|實習|summer associate", re.I)
 BIG = ["nvidia", "apple", "amd", "advanced micro", "qualcomm", "google", "meta", "microsoft", "amazon",
@@ -108,36 +111,56 @@ def label(p):
     return re.sub(r"\\b|\\s\*|\\|\(|\)|\?|-\?", "", p).replace("[- ]", " ").strip()
 
 
+VAGUE_RE = re.compile(r"^\s*(\d+\s+locations?|multiple locations|various locations|remote|anywhere|hybrid|"
+                      r"on\s?site|tbd|n/?a|global)?\s*$", re.I)
+CC_PREFIX_RE = re.compile(r"^(vn|cn|prc|in|il|de|gb|uk|fr|pl|sg|sgp|my|jp|kr|ie|nl|es|it|ch|se|at|cz|ro|hu|be|dk|fi|"
+                          r"no|tr|br|mx|au|nz|ph|th|can)\b", re.I)
+MORE_NON_US_RE = re.compile(
+    r"valbonne|sophia antipolis|belo horizonte|sao paulo|são paulo|bucharest|iasi|timisoara|nijmegen|eindhoven|"
+    r"delft|gratkorn|graz|villach|linz|vienna|catania|agrate|milan|milano|rome|brno|prague|hamburg|dresden|"
+    r"nuremberg|stuttgart|regensburg|grenoble|crolles|rousset|toulouse|nice\b|leuven|mechelen|krak[oó]w|gda[nń]sk|"
+    r"wroc[lł]aw|budapest|sofia|novi sad|istanbul|ankara|cairo|pune|noida|chennai|mumbai|delhi|gurgaon|gurugram|"
+    r"ahmedabad|kolkata|tianjin|suzhou|wuhan|chengdu|xi'an|nanjing|hangzhou|guangzhou|xiamen|hefei|qingdao|dalian|"
+    r"osaka|yokohama|kawasaki|seoul|suwon|hwaseong|pyeongtaek|bangkok|manila|kuala lumpur|cyberjaya|ho chi minh|"
+    r"hanoi|da nang|petah|tikva|herzliya|jerusalem|ra'?anana|kfar saba|caesarea|cork|dublin|galway|limerick|"
+    r"edinburgh|bristol|manchester|sheffield|reading, uk|zurich|z[uü]rich|geneva|lausanne|stockholm|lund|oslo|"
+    r"copenhagen|helsinki|oulu|tampere|espoo|madrid|barcelona|sydney|melbourne|brisbane|adelaide|perth|auckland|"
+    r"guadalajara|jalisco|monterrey|bogot|lima\b|santiago|buenos aires|fab 10|fab 15|fab 16|hiroshima|singapore",
+    re.I)
+
+
 def classify_location(loc):
-    # Workday path segments look like "US-CA-Santa-Clara" or "Taiwan-Hsinchu".
-    s = (loc or "").replace("-", " ") if re.match(r"^[A-Za-z]+(-[A-Za-z]+)+$", loc or "") else (loc or "")
+    s = re.sub(r"[-_]+", " ", loc or "").strip()
+    if VAGUE_RE.match(s):
+        return "VAGUE"
     if TW_RE.search(s):
         return "TW"
-    if NON_US_RE.search(s):
+    if NON_US_RE.search(s) or MORE_NON_US_RE.search(s) or CC_PREFIX_RE.match(s):
         return "OTHER"
     if US_WORDS_RE.search(s) or US_STATE_RE.search(s):
         return "US"
     return "UNKNOWN"
 
 
-def region_for(locations):
-    """US if any location is in the US, TW if any is in Taiwan, None if all are elsewhere.
-    Unrecognised strings ("2 Locations", "Remote") count as US so they are not lost."""
-    kinds = [classify_location(l) for l in (locations or []) if l]
-    if not kinds:
-        return "US"
+def region_for(locations, strict=False):
+    """US if any location is in the US, TW if any is in Taiwan, otherwise None when a location is clearly
+    elsewhere. Vague strings ("2 Locations", "Remote") alone count as US. In strict mode (company sites)
+    an unrecognised place name is treated as outside the US/Taiwan."""
+    kinds = [classify_location(l) for l in (locations or []) if l and str(l).strip()]
     if "US" in kinds:
         return "US"
     if "TW" in kinds:
         return "TW"
-    if all(k == "OTHER" for k in kinds):
+    if "OTHER" in kinds:
+        return None
+    if strict and "UNKNOWN" in kinds:
         return None
     return "US"
 
 
 def tier_for(title, category=None):
     """Return (tier, keyword labels) or (None, []) when the title is off-field."""
-    t = (title or "").lower()
+    t = (title or "").lower().replace("non-silicon", "")
     if hit(EXCLUDE_TITLE, t):
         return None, []
     core = hit(CORE, t)
