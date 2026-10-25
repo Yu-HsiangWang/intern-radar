@@ -114,6 +114,10 @@ def main():
             region = rules.region_for(it.get("locations") or [], strict=True)
             if region is None:
                 continue
+            posted = it.get("posted") or ""
+            # A "Summer" posting from before June of this year belongs to last summer's cycle.
+            if posted and posted < TODAY[:4] + "-06-01" and "summer" in title.lower() and "2027" not in title:
+                continue
             tier, kws = rules.tier_for(title)
             if not tier:
                 continue
@@ -133,7 +137,7 @@ def main():
                 continue
             r = {
                 "id": rid, "company": company, "title": title, "url": it.get("url", ""),
-                "locations": [l for l in (it.get("locations") or []) if l][:6], "posted": it.get("posted") or "",
+                "locations": list(dict.fromkeys(l for l in (it.get("locations") or []) if l))[:4], "posted": posted,
                 "tier": tier, "keywords": kws, "degrees": rules.degrees_for(title),
                 "usPersonLikely": rules.us_person_likely(company, title), "big": rules.is_big(company),
                 "source": "官網", "official": True, "region": region, "term": rules.term_for(title),
@@ -174,6 +178,8 @@ def main():
         r = dict(r)
         r.pop("group", None)
         r.pop("req", None)
+        r["locations"] = list(dict.fromkeys(r.get("locations") or []))[:4]
+        r["keywords"] = (r.get("keywords") or [])[:3]
         out.append(r)
     out.sort(key=lambda d: (d["firstSeen"], d["posted"]), reverse=True)
 

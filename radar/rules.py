@@ -45,7 +45,7 @@ OFFICIAL_EXCLUDE = [
     r"ph\.?\s?d", r"doctoral", r"post-?doc", r"\bmasters?\b", r"master's", r"\bms\b", r"\bm\.s\.",
     r"(?<!under)graduate\b", r"new grad", r"new college grad", r"full[- ]time", r"\bmba\b",
     r"long[- ]term", r"\b1[26][- ]month", r"\bpey\b", r"apprentice",
-    r"碩士", r"博士", r"研發替代役", r"\brdss\b",
+    r"碩士", r"博士", r"研發替代役", r"\brdss\b", r"\bresearch intern",
     r"\bjan(uary)?\b\W{0,3}(-|–|to)\W{0,3}\b(jun|june)\b", r"\b[mfw]/[mfw]/[dx]\b",
 ]
 INTERN_RE = re.compile(r"\bintern(s|ship|ships)?\b|\bco-?op\b|\bstudent\b|實習|summer associate", re.I)
