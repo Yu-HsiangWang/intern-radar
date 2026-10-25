@@ -11,8 +11,8 @@ from urllib.parse import quote
 
 import requests
 
-UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-      "(KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36")
+# Identify honestly; sites that refuse automated clients are left out rather than worked around.
+UA = "intern-radar/1.0 (+https://github.com/Yu-HsiangWang/intern-radar; daily job-posting digest)"
 S = requests.Session()
 S.headers.update({"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9"})
 TIMEOUT = 30
@@ -214,7 +214,7 @@ def oracle_hcm(company, host, site, keyword="intern"):
     return out
 
 
-# --------------------------------------------------------------------------- Amazon / AMD / Tesla
+# --------------------------------------------------------------------------- Amazon / AMD
 def amazon(queries):
     out = {}
     for q, category in queries:
@@ -262,22 +262,6 @@ def amd(queries=("intern",), max_pages=6):
             time.sleep(PAUSE)
     return list(out.values())
 
-
-def tesla():
-    r = S.get("https://www.tesla.com/cua-api/apps/careers/state", headers={"Accept": "application/json"},
-              timeout=TIMEOUT)
-    r.raise_for_status()
-    j = r.json()
-    lookup = (j.get("lookup") or {}).get("locations") or {}
-    out = []
-    for l in j.get("listings", []):
-        title = l.get("t") or l.get("title") or ""
-        if not re.search(r"intern", title, re.I):
-            continue
-        loc = lookup.get(str(l.get("l")), "") if isinstance(lookup, dict) else ""
-        out.append(dict(company="Tesla", title=title, url=f"https://www.tesla.com/careers/search/job/{l.get('id')}",
-                        locations=[loc] if loc else [], posted="", req=str(l.get("id"))))
-    return out
 
 
 # --------------------------------------------------------------------------- HTML-rendered sites
@@ -347,24 +331,6 @@ def apple(location="united-states-USA", pages=6):
         time.sleep(PAUSE)
     return list(out.values())
 
-
-def meta(queries):
-    out = {}
-    for q in queries:
-        r = S.get(f"https://www.metacareers.com/jobs?q={quote(q)}", timeout=TIMEOUT)
-        r.raise_for_status()
-        text = r.text.replace('\\"', '"').replace("\\/", "/")
-        for jid, title in re.findall(r'"id":"(\d{12,20})","title":"([^"]{4,200})"', text):
-            out.setdefault(jid, dict(company="Meta", title=html.unescape(title),
-                                     url=f"https://www.metacareers.com/jobs/{jid}/", locations=[],
-                                     posted="", req=jid))
-        for jid, inner in re.findall(r'href="/jobs/(\d{12,20})/?"[^>]*>(.*?)</a>', text, re.S):
-            title = _strip(inner)
-            if title:
-                out.setdefault(jid, dict(company="Meta", title=title, url=f"https://www.metacareers.com/jobs/{jid}/",
-                                         locations=[], posted="", req=jid))
-        time.sleep(PAUSE)
-    return list(out.values())
 
 
 def arm(pages=3):

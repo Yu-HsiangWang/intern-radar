@@ -1,5 +1,6 @@
 """Company careers sites scanned every day. Each entry: (name, fetcher, args).
 A source that errors is reported on the board and skipped; the rest still run.
+Sites that refuse automated clients (e.g. Meta, Tesla careers) are not scraped; SimplifyJobs covers them.
 To add a company, add one line here.
 """
 import fetchers as F
@@ -27,11 +28,9 @@ GREENHOUSE = [
     ("Astera Labs", "asteraearlycareer2027"),
     ("Tenstorrent", "tenstorrentuniversity"),
     ("Tenstorrent", "tenstorrent"),
-    ("Groq", "groq"),
     ("Lightmatter", "lightmatter"),
     ("SambaNova", "sambanovasystems"),
     ("Samsung Research America", "samsungresearchamericainternship"),
-    ("Ayar Labs", "ayarlabs"),
     ("xAI", "xai"),
     ("Anthropic", "anthropic"),
 ]
@@ -56,8 +55,6 @@ SOURCES += [
     ("Google", F.google, ([("hardware", "United States"), ("silicon", "United States"), ("ASIC", "United States"),
                            ("TPU", "United States"), ("", "Taiwan")],)),
     ("Apple", F.apple, ()),
-    ("Meta", F.meta, (["ASIC intern", "silicon intern", "hardware intern", "design verification intern"],)),
-    ("Tesla", F.tesla, ()),
     ("Arm", F.arm, ()),
     ("Texas Instruments", F.oracle_hcm, ("Texas Instruments", "edbz.fa.us2.oraclecloud.com", "CX")),
     ("onsemi", F.oracle_hcm, ("onsemi", "hctz.fa.us2.oraclecloud.com", "CX_1001")),
