@@ -1,13 +1,13 @@
 {
- "updatedAt": "2026-10-25T21:39:20Z",
+ "updatedAt": "2026-10-25T21:44:41Z",
  "counts": {
-  "total": 415,
+  "total": 413,
   "core": 113,
-  "related": 213,
+  "related": 211,
   "stretch": 89,
   "newToday": 0,
-  "official": 167,
-  "taiwan": 7
+  "official": 165,
+  "taiwan": 6
  },
  "sources": [
   {
@@ -16,7 +16,7 @@
    "fetched": 280,
    "kept": 280,
    "error": "",
-   "seconds": 0.4
+   "seconds": 0.5
   },
   {
    "name": "NVIDIA",
@@ -25,7 +25,7 @@
    "kept": 9,
    "matchedSimplify": 6,
    "error": "",
-   "seconds": 47.7
+   "seconds": 38.2
   },
   {
    "name": "Intel",
@@ -34,7 +34,7 @@
    "kept": 1,
    "matchedSimplify": 2,
    "error": "",
-   "seconds": 19.6
+   "seconds": 16.6
   },
   {
    "name": "Marvell",
@@ -43,7 +43,7 @@
    "kept": 2,
    "matchedSimplify": 10,
    "error": "",
-   "seconds": 26.1
+   "seconds": 24.0
   },
   {
    "name": "Micron",
@@ -52,7 +52,7 @@
    "kept": 32,
    "matchedSimplify": 6,
    "error": "",
-   "seconds": 36.3
+   "seconds": 36.5
   },
   {
    "name": "Analog Devices",
@@ -61,7 +61,7 @@
    "kept": 4,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 12.7
+   "seconds": 13.8
   },
   {
    "name": "Broadcom",
@@ -88,7 +88,7 @@
    "kept": 22,
    "matchedSimplify": 8,
    "error": "",
-   "seconds": 37.5
+   "seconds": 35.6
   },
   {
    "name": "GlobalFoundries",
@@ -97,7 +97,7 @@
    "kept": 2,
    "matchedSimplify": 5,
    "error": "",
-   "seconds": 11.4
+   "seconds": 10.1
   },
   {
    "name": "Cadence",
@@ -106,7 +106,7 @@
    "kept": 1,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 8.1
+   "seconds": 10.4
   },
   {
    "name": "Altera",
@@ -115,7 +115,7 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 2.8
+   "seconds": 3.2
   },
   {
    "name": "SiFive",
@@ -124,7 +124,7 @@
    "kept": 1,
    "matchedSimplify": 1,
    "error": "",
-   "seconds": 2.0
+   "seconds": 2.4
   },
   {
    "name": "NXP",
@@ -133,7 +133,7 @@
    "kept": 1,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 13.9
+   "seconds": 15.6
   },
   {
    "name": "Ambarella",
@@ -142,7 +142,7 @@
    "kept": 1,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.8
+   "seconds": 0.9
   },
   {
    "name": "Ciena",
@@ -151,34 +151,34 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 1.4
+   "seconds": 1.0
   },
   {
    "name": "Qualcomm",
    "ok": true,
    "fetched": 102,
-   "kept": 5,
+   "kept": 4,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 7.0
+   "seconds": 6.6
   },
   {
    "name": "Microsoft",
    "ok": true,
    "fetched": 107,
-   "kept": 1,
+   "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 7.0
+   "seconds": 6.4
   },
   {
    "name": "AMD",
    "ok": true,
-   "fetched": 109,
+   "fetched": 110,
    "kept": 5,
    "matchedSimplify": 5,
    "error": "",
-   "seconds": 1.4
+   "seconds": 1.6
   },
   {
    "name": "Amazon",
@@ -187,7 +187,7 @@
    "kept": 1,
    "matchedSimplify": 4,
    "error": "",
-   "seconds": 4.6
+   "seconds": 3.9
   },
   {
    "name": "Google",
@@ -196,7 +196,7 @@
    "kept": 2,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 2.1
+   "seconds": 2.4
   },
   {
    "name": "Apple",
@@ -214,7 +214,7 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 1.6
+   "seconds": 3.7
   },
   {
    "name": "Texas Instruments",
@@ -223,7 +223,7 @@
    "kept": 3,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 1.6
+   "seconds": 1.5
   },
   {
    "name": "onsemi",
@@ -232,7 +232,7 @@
    "kept": 0,
    "matchedSimplify": 1,
    "error": "",
-   "seconds": 1.8
+   "seconds": 1.5
   },
   {
    "name": "Western Digital",
@@ -241,7 +241,7 @@
    "kept": 1,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.6
+   "seconds": 0.5
   },
   {
    "name": "Sandisk",
@@ -259,7 +259,7 @@
    "kept": 5,
    "matchedSimplify": 2,
    "error": "",
-   "seconds": 2.1
+   "seconds": 1.8
   },
   {
    "name": "Astera Labs (Greenhouse asteraearlycareer2027)",
@@ -268,7 +268,7 @@
    "kept": 25,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.3
+   "seconds": 0.1
   },
   {
    "name": "Tenstorrent (Greenhouse tenstorrentuniversity)",
@@ -286,7 +286,7 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.1
+   "seconds": 0.0
   },
   {
    "name": "Lightmatter (Greenhouse lightmatter)",
@@ -295,7 +295,7 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.1
+   "seconds": 0.0
   },
   {
    "name": "SambaNova (Greenhouse sambanovasystems)",
@@ -358,7 +358,7 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "name": "Cerebras",
