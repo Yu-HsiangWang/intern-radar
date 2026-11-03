@@ -1,40 +1,40 @@
 {
- "updatedAt": "2026-11-02T20:29:36Z",
+ "updatedAt": "2026-11-03T18:00:06Z",
  "counts": {
-  "total": 413,
-  "core": 115,
-  "related": 206,
-  "stretch": 92,
-  "newToday": 2,
-  "official": 167,
+  "total": 422,
+  "core": 114,
+  "related": 212,
+  "stretch": 96,
+  "newToday": 17,
+  "official": 170,
   "taiwan": 6
  },
  "sources": [
   {
    "name": "SimplifyJobs",
    "ok": true,
-   "fetched": 280,
-   "kept": 280,
+   "fetched": 289,
+   "kept": 289,
    "error": "",
    "seconds": 0.5
   },
   {
    "name": "NVIDIA",
    "ok": true,
-   "fetched": 209,
+   "fetched": 211,
    "kept": 9,
-   "matchedSimplify": 8,
+   "matchedSimplify": 9,
    "error": "",
-   "seconds": 60.2
+   "seconds": 53.4
   },
   {
    "name": "Intel",
    "ok": true,
-   "fetched": 100,
+   "fetched": 98,
    "kept": 1,
    "matchedSimplify": 2,
    "error": "",
-   "seconds": 16.1
+   "seconds": 19.7
   },
   {
    "name": "Marvell",
@@ -43,25 +43,25 @@
    "kept": 1,
    "matchedSimplify": 10,
    "error": "",
-   "seconds": 26.7
+   "seconds": 27.8
   },
   {
    "name": "Micron",
    "ok": true,
-   "fetched": 143,
-   "kept": 32,
-   "matchedSimplify": 6,
+   "fetched": 147,
+   "kept": 33,
+   "matchedSimplify": 5,
    "error": "",
-   "seconds": 42.8
+   "seconds": 50.3
   },
   {
    "name": "Analog Devices",
    "ok": true,
-   "fetched": 59,
+   "fetched": 62,
    "kept": 5,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 18.4
+   "seconds": 19.7
   },
   {
    "name": "Broadcom",
@@ -70,12 +70,12 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 4.0
+   "seconds": 4.4
   },
   {
    "name": "Samsung Semiconductor",
    "ok": true,
-   "fetched": 26,
+   "fetched": 27,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
@@ -84,29 +84,29 @@
   {
    "name": "Hewlett Packard Enterprise",
    "ok": true,
-   "fetched": 172,
+   "fetched": 174,
    "kept": 21,
    "matchedSimplify": 9,
    "error": "",
-   "seconds": 33.2
+   "seconds": 35.3
   },
   {
    "name": "GlobalFoundries",
    "ok": true,
-   "fetched": 115,
+   "fetched": 122,
    "kept": 3,
-   "matchedSimplify": 6,
+   "matchedSimplify": 9,
    "error": "",
-   "seconds": 12.5
+   "seconds": 16.5
   },
   {
    "name": "Cadence",
    "ok": true,
-   "fetched": 30,
+   "fetched": 32,
    "kept": 1,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 9.0
+   "seconds": 11.9
   },
   {
    "name": "Altera",
@@ -115,7 +115,7 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 5.5
+   "seconds": 6.2
   },
   {
    "name": "SiFive",
@@ -124,16 +124,16 @@
    "kept": 1,
    "matchedSimplify": 1,
    "error": "",
-   "seconds": 2.4
+   "seconds": 3.0
   },
   {
    "name": "NXP",
    "ok": true,
-   "fetched": 113,
+   "fetched": 110,
    "kept": 2,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 15.6
+   "seconds": 14.8
   },
   {
    "name": "Ambarella",
@@ -142,7 +142,7 @@
    "kept": 1,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 1.2
+   "seconds": 1.0
   },
   {
    "name": "Ciena",
@@ -151,25 +151,25 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 3.5
+   "seconds": 2.7
   },
   {
    "name": "Qualcomm",
    "ok": true,
-   "fetched": 111,
+   "fetched": 116,
    "kept": 4,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 7.4
+   "seconds": 6.9
   },
   {
    "name": "Microsoft",
    "ok": true,
-   "fetched": 97,
+   "fetched": 100,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 5.7
+   "seconds": 6.1
   },
   {
    "name": "AMD",
@@ -178,7 +178,7 @@
    "kept": 5,
    "matchedSimplify": 5,
    "error": "",
-   "seconds": 1.7
+   "seconds": 1.6
   },
   {
    "name": "Amazon",
@@ -187,7 +187,7 @@
    "kept": 1,
    "matchedSimplify": 4,
    "error": "",
-   "seconds": 4.7
+   "seconds": 5.1
   },
   {
    "name": "Google",
@@ -196,7 +196,7 @@
    "kept": 2,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 2.4
+   "seconds": 2.6
   },
   {
    "name": "Apple",
@@ -205,16 +205,16 @@
    "kept": 2,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 2.4
+   "seconds": 2.1
   },
   {
    "name": "Arm",
    "ok": true,
-   "fetched": 201,
+   "fetched": 198,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 3.3
+   "seconds": 1.7
   },
   {
    "name": "Texas Instruments",
@@ -223,7 +223,7 @@
    "kept": 1,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 1.8
+   "seconds": 1.7
   },
   {
    "name": "onsemi",
@@ -232,16 +232,16 @@
    "kept": 0,
    "matchedSimplify": 1,
    "error": "",
-   "seconds": 1.5
+   "seconds": 1.4
   },
   {
    "name": "Western Digital",
    "ok": true,
-   "fetched": 82,
+   "fetched": 80,
    "kept": 1,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.5
+   "seconds": 0.6
   },
   {
    "name": "Sandisk",
@@ -250,7 +250,7 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.5
+   "seconds": 0.4
   },
   {
    "name": "Cirrus Logic",
@@ -265,10 +265,10 @@
    "name": "Astera Labs (Greenhouse asteraearlycareer2027)",
    "ok": true,
    "fetched": 93,
-   "kept": 25,
+   "kept": 24,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "name": "Tenstorrent (Greenhouse tenstorrentuniversity)",
@@ -286,12 +286,12 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "name": "Lightmatter (Greenhouse lightmatter)",
    "ok": true,
-   "fetched": 58,
+   "fetched": 56,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
@@ -300,25 +300,25 @@
   {
    "name": "SambaNova (Greenhouse sambanovasystems)",
    "ok": true,
-   "fetched": 69,
+   "fetched": 72,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "name": "Samsung Research America (Greenhouse samsungresearchamericainternship)",
    "ok": true,
-   "fetched": 2,
+   "fetched": 3,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "name": "xAI (Greenhouse xai)",
    "ok": true,
-   "fetched": 312,
+   "fetched": 299,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
@@ -327,11 +327,11 @@
   {
    "name": "Anthropic (Greenhouse anthropic)",
    "ok": true,
-   "fetched": 677,
+   "fetched": 672,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "name": "Etched",
@@ -340,25 +340,25 @@
    "kept": 6,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.2
+   "seconds": 0.3
   },
   {
    "name": "d-Matrix",
    "ok": true,
-   "fetched": 40,
+   "fetched": 39,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "name": "MatX",
    "ok": true,
-   "fetched": 41,
+   "fetched": 43,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "name": "Cerebras",
@@ -367,7 +367,7 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "name": "OpenAI",
@@ -376,7 +376,7 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.5
+   "seconds": 0.8
   }
  ]
 }
