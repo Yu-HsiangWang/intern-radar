@@ -1,55 +1,58 @@
 {
- "updatedAt": "2026-11-14T16:40:47Z",
+ "updatedAt": "2026-11-15T17:20:35Z",
  "counts": {
-  "total": 359,
-  "core": 81,
-  "related": 175,
-  "stretch": 103,
-  "newToday": 10,
-  "official": 92,
-  "taiwan": 2
+  "total": 420,
+  "core": 106,
+  "related": 212,
+  "stretch": 102,
+  "newToday": 1,
+  "official": 165,
+  "taiwan": 7
  },
  "sources": [
   {
    "name": "SimplifyJobs",
    "ok": true,
-   "fetched": 292,
-   "kept": 292,
+   "fetched": 290,
+   "kept": 290,
    "error": "",
    "seconds": 0.4
   },
   {
    "name": "NVIDIA",
-   "ok": false,
-   "fetched": 0,
-   "kept": 0,
-   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-   "seconds": 0.2
+   "ok": true,
+   "fetched": 224,
+   "kept": 12,
+   "matchedSimplify": 9,
+   "error": "",
+   "seconds": 47.2
   },
   {
    "name": "Intel",
-   "ok": false,
-   "fetched": 0,
-   "kept": 0,
-   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-   "seconds": 0.2
+   "ok": true,
+   "fetched": 89,
+   "kept": 1,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 12.0
   },
   {
    "name": "Marvell",
    "ok": true,
-   "fetched": 88,
+   "fetched": 90,
    "kept": 1,
    "matchedSimplify": 6,
    "error": "",
-   "seconds": 23.0
+   "seconds": 21.3
   },
   {
    "name": "Micron",
-   "ok": false,
-   "fetched": 0,
-   "kept": 0,
-   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-   "seconds": 0.2
+   "ok": true,
+   "fetched": 134,
+   "kept": 28,
+   "matchedSimplify": 4,
+   "error": "",
+   "seconds": 31.3
   },
   {
    "name": "Analog Devices",
@@ -58,7 +61,7 @@
    "kept": 5,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 21.7
+   "seconds": 20.3
   },
   {
    "name": "Broadcom",
@@ -67,7 +70,7 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 3.9
+   "seconds": 5.3
   },
   {
    "name": "Samsung Semiconductor",
@@ -76,15 +79,16 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 5.1
+   "seconds": 4.9
   },
   {
    "name": "Hewlett Packard Enterprise",
-   "ok": false,
-   "fetched": 0,
-   "kept": 0,
-   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-   "seconds": 0.1
+   "ok": true,
+   "fetched": 187,
+   "kept": 22,
+   "matchedSimplify": 10,
+   "error": "",
+   "seconds": 39.0
   },
   {
    "name": "GlobalFoundries",
@@ -93,7 +97,7 @@
    "kept": 4,
    "matchedSimplify": 9,
    "error": "",
-   "seconds": 13.5
+   "seconds": 12.8
   },
   {
    "name": "Cadence",
@@ -111,7 +115,7 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 5.4
+   "seconds": 4.9
   },
   {
    "name": "SiFive",
@@ -120,7 +124,7 @@
    "kept": 1,
    "matchedSimplify": 1,
    "error": "",
-   "seconds": 2.4
+   "seconds": 2.2
   },
   {
    "name": "NXP",
@@ -128,7 +132,7 @@
    "fetched": 0,
    "kept": 0,
    "error": "HTTPError: 422 Client Error: Unprocessable Entity for url: https://nxp.wd3.myworkdayjobs.com/wday/cxs/nxp/careers/jobs",
-   "seconds": 0.6
+   "seconds": 0.7
   },
   {
    "name": "Ambarella",
@@ -137,7 +141,7 @@
    "kept": 1,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.9
+   "seconds": 1.1
   },
   {
    "name": "Ciena",
@@ -146,7 +150,7 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 2.5
+   "seconds": 2.1
   },
   {
    "name": "Qualcomm",
@@ -155,16 +159,15 @@
    "kept": 4,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 7.0
+   "seconds": 7.4
   },
   {
    "name": "Microsoft",
-   "ok": true,
-   "fetched": 111,
+   "ok": false,
+   "fetched": 0,
    "kept": 0,
-   "matchedSimplify": 0,
-   "error": "",
-   "seconds": 6.1
+   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=intern&location=&start=0&sort_by=timestamp",
+   "seconds": 0.1
   },
   {
    "name": "AMD",
@@ -182,7 +185,7 @@
    "kept": 1,
    "matchedSimplify": 4,
    "error": "",
-   "seconds": 4.8
+   "seconds": 4.3
   },
   {
    "name": "Google",
@@ -191,7 +194,7 @@
    "kept": 2,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 2.5
+   "seconds": 2.3
   },
   {
    "name": "Apple",
@@ -200,7 +203,7 @@
    "kept": 2,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 5.0
+   "seconds": 2.4
   },
   {
    "name": "Arm",
@@ -209,7 +212,7 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 2.9
+   "seconds": 1.9
   },
   {
    "name": "Texas Instruments",
@@ -218,7 +221,7 @@
    "kept": 4,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 1.6
+   "seconds": 1.8
   },
   {
    "name": "onsemi",
@@ -227,7 +230,7 @@
    "kept": 0,
    "matchedSimplify": 2,
    "error": "",
-   "seconds": 1.5
+   "seconds": 1.9
   },
   {
    "name": "Western Digital",
@@ -236,7 +239,7 @@
    "kept": 1,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.6
+   "seconds": 0.5
   },
   {
    "name": "Sandisk",
@@ -254,7 +257,7 @@
    "kept": 6,
    "matchedSimplify": 2,
    "error": "",
-   "seconds": 1.7
+   "seconds": 1.5
   },
   {
    "name": "Astera Labs (Greenhouse asteraearlycareer2027)",
@@ -272,7 +275,7 @@
    "kept": 3,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.0
+   "seconds": 0.1
   },
   {
    "name": "Tenstorrent (Greenhouse tenstorrent)",
@@ -281,7 +284,7 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.0
+   "seconds": 0.1
   },
   {
    "name": "Lightmatter (Greenhouse lightmatter)",
@@ -290,7 +293,7 @@
    "kept": 2,
    "matchedSimplify": 2,
    "error": "",
-   "seconds": 0.0
+   "seconds": 0.1
   },
   {
    "name": "SambaNova (Greenhouse sambanovasystems)",
@@ -299,7 +302,7 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.0
+   "seconds": 0.1
   },
   {
    "name": "Samsung Research America (Greenhouse samsungresearchamericainternship)",
@@ -317,12 +320,12 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.0
+   "seconds": 0.1
   },
   {
    "name": "Anthropic (Greenhouse anthropic)",
    "ok": true,
-   "fetched": 669,
+   "fetched": 668,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
@@ -344,7 +347,7 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.1
+   "seconds": 0.0
   },
   {
    "name": "MatX",
@@ -362,12 +365,12 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.2
+   "seconds": 0.1
   },
   {
    "name": "OpenAI",
    "ok": true,
-   "fetched": 838,
+   "fetched": 837,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
