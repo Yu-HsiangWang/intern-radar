@@ -1,22 +1,22 @@
 {
- "updatedAt": "2026-11-17T19:15:59Z",
+ "updatedAt": "2026-11-18T18:55:03Z",
  "counts": {
-  "total": 341,
-  "core": 77,
-  "related": 167,
-  "stretch": 97,
-  "newToday": 6,
-  "official": 66,
+  "total": 330,
+  "core": 74,
+  "related": 163,
+  "stretch": 93,
+  "newToday": 4,
+  "official": 67,
   "taiwan": 2
  },
  "sources": [
   {
    "name": "SimplifyJobs",
    "ok": true,
-   "fetched": 286,
-   "kept": 286,
+   "fetched": 274,
+   "kept": 274,
    "error": "",
-   "seconds": 0.3
+   "seconds": 0.5
   },
   {
    "name": "NVIDIA",
@@ -72,7 +72,7 @@
    "fetched": 0,
    "kept": 0,
    "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://sec.wd3.myworkdayjobs.com/wday/cxs/sec/Samsung_Careers/jobs",
-   "seconds": 0.3
+   "seconds": 0.4
   },
   {
    "name": "Hewlett Packard Enterprise",
@@ -96,7 +96,7 @@
    "fetched": 0,
    "kept": 0,
    "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://cadence.wd1.myworkdayjobs.com/wday/cxs/cadence/External_Careers/jobs",
-   "seconds": 0.0
+   "seconds": 0.1
   },
   {
    "name": "Altera",
@@ -104,7 +104,7 @@
    "fetched": 0,
    "kept": 0,
    "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://altera.wd1.myworkdayjobs.com/wday/cxs/altera/altera/jobs",
-   "seconds": 0.0
+   "seconds": 0.1
   },
   {
    "name": "SiFive",
@@ -120,7 +120,7 @@
    "fetched": 0,
    "kept": 0,
    "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://nxp.wd3.myworkdayjobs.com/wday/cxs/nxp/careers/jobs",
-   "seconds": 0.3
+   "seconds": 0.4
   },
   {
    "name": "Ambarella",
@@ -141,20 +141,20 @@
   {
    "name": "Qualcomm",
    "ok": true,
-   "fetched": 123,
+   "fetched": 121,
    "kept": 4,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 7.9
+   "seconds": 8.2
   },
   {
    "name": "Microsoft",
    "ok": true,
-   "fetched": 107,
+   "fetched": 112,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 6.5
+   "seconds": 7.5
   },
   {
    "name": "AMD",
@@ -163,7 +163,7 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.3
+   "seconds": 1.2
   },
   {
    "name": "Amazon",
@@ -172,7 +172,7 @@
    "kept": 1,
    "matchedSimplify": 4,
    "error": "",
-   "seconds": 5.0
+   "seconds": 5.4
   },
   {
    "name": "Google",
@@ -181,7 +181,7 @@
    "kept": 2,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 2.1
+   "seconds": 2.5
   },
   {
    "name": "Apple",
@@ -190,22 +190,22 @@
    "kept": 2,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 44.0
+   "seconds": 35.8
   },
   {
    "name": "Arm",
    "ok": true,
-   "fetched": 191,
+   "fetched": 189,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 1.6
+   "seconds": 2.4
   },
   {
    "name": "Texas Instruments",
    "ok": true,
    "fetched": 100,
-   "kept": 6,
+   "kept": 7,
    "matchedSimplify": 0,
    "error": "",
    "seconds": 1.5
@@ -222,11 +222,11 @@
   {
    "name": "Western Digital",
    "ok": true,
-   "fetched": 78,
+   "fetched": 79,
    "kept": 1,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.4
+   "seconds": 0.6
   },
   {
    "name": "Sandisk",
@@ -244,7 +244,7 @@
    "kept": 6,
    "matchedSimplify": 2,
    "error": "",
-   "seconds": 1.4
+   "seconds": 1.1
   },
   {
    "name": "Astera Labs (Greenhouse asteraearlycareer2027)",
@@ -253,7 +253,7 @@
    "kept": 23,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.0
+   "seconds": 0.1
   },
   {
    "name": "Tenstorrent (Greenhouse tenstorrentuniversity)",
@@ -267,7 +267,7 @@
   {
    "name": "Tenstorrent (Greenhouse tenstorrent)",
    "ok": true,
-   "fetched": 132,
+   "fetched": 133,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
@@ -276,7 +276,7 @@
   {
    "name": "Lightmatter (Greenhouse lightmatter)",
    "ok": true,
-   "fetched": 72,
+   "fetched": 71,
    "kept": 1,
    "matchedSimplify": 2,
    "error": "",
@@ -312,7 +312,7 @@
   {
    "name": "Anthropic (Greenhouse anthropic)",
    "ok": true,
-   "fetched": 660,
+   "fetched": 650,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
@@ -325,12 +325,12 @@
    "kept": 6,
    "matchedSimplify": 1,
    "error": "",
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "name": "d-Matrix",
    "ok": true,
-   "fetched": 37,
+   "fetched": 38,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
@@ -339,7 +339,7 @@
   {
    "name": "MatX",
    "ok": true,
-   "fetched": 41,
+   "fetched": 42,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
@@ -348,7 +348,7 @@
   {
    "name": "Cerebras",
    "ok": true,
-   "fetched": 128,
+   "fetched": 129,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
@@ -357,7 +357,7 @@
   {
    "name": "OpenAI",
    "ok": true,
-   "fetched": 836,
+   "fetched": 841,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
