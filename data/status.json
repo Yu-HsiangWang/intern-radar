@@ -1,20 +1,20 @@
 {
- "updatedAt": "2026-11-19T19:04:01Z",
+ "updatedAt": "2026-11-20T18:40:19Z",
  "counts": {
-  "total": 334,
+  "total": 347,
   "core": 75,
-  "related": 165,
-  "stretch": 94,
-  "newToday": 10,
-  "official": 73,
+  "related": 175,
+  "stretch": 97,
+  "newToday": 26,
+  "official": 80,
   "taiwan": 2
  },
  "sources": [
   {
    "name": "SimplifyJobs",
    "ok": true,
-   "fetched": 271,
-   "kept": 271,
+   "fetched": 281,
+   "kept": 281,
    "error": "",
    "seconds": 0.5
   },
@@ -28,11 +28,12 @@
   },
   {
    "name": "Intel",
-   "ok": false,
-   "fetched": 0,
-   "kept": 0,
-   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://intel.wd1.myworkdayjobs.com/wday/cxs/intel/External/jobs",
-   "seconds": 0.1
+   "ok": true,
+   "fetched": 80,
+   "kept": 1,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 6.0
   },
   {
    "name": "Marvell",
@@ -40,7 +41,7 @@
    "fetched": 0,
    "kept": 0,
    "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://marvell.wd1.myworkdayjobs.com/wday/cxs/marvell/MarvellCareers/jobs",
-   "seconds": 0.1
+   "seconds": 0.0
   },
   {
    "name": "Micron",
@@ -48,7 +49,7 @@
    "fetched": 0,
    "kept": 0,
    "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://micron.wd1.myworkdayjobs.com/wday/cxs/micron/External/jobs",
-   "seconds": 0.1
+   "seconds": 0.0
   },
   {
    "name": "Analog Devices",
@@ -56,7 +57,7 @@
    "fetched": 0,
    "kept": 0,
    "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://analogdevices.wd1.myworkdayjobs.com/wday/cxs/analogdevices/External/jobs",
-   "seconds": 0.1
+   "seconds": 0.0
   },
   {
    "name": "Broadcom",
@@ -64,7 +65,7 @@
    "fetched": 0,
    "kept": 0,
    "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://broadcom.wd1.myworkdayjobs.com/wday/cxs/broadcom/External_Career/jobs",
-   "seconds": 0.0
+   "seconds": 0.1
   },
   {
    "name": "Samsung Semiconductor",
@@ -72,7 +73,7 @@
    "fetched": 0,
    "kept": 0,
    "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://sec.wd3.myworkdayjobs.com/wday/cxs/sec/Samsung_Careers/jobs",
-   "seconds": 0.3
+   "seconds": 0.5
   },
   {
    "name": "Hewlett Packard Enterprise",
@@ -88,7 +89,7 @@
    "fetched": 0,
    "kept": 0,
    "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://globalfoundries.wd1.myworkdayjobs.com/wday/cxs/globalfoundries/External/jobs",
-   "seconds": 0.1
+   "seconds": 0.0
   },
   {
    "name": "Cadence",
@@ -104,7 +105,7 @@
    "fetched": 0,
    "kept": 0,
    "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://altera.wd1.myworkdayjobs.com/wday/cxs/altera/altera/jobs",
-   "seconds": 0.1
+   "seconds": 0.0
   },
   {
    "name": "SiFive",
@@ -120,15 +121,16 @@
    "fetched": 0,
    "kept": 0,
    "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://nxp.wd3.myworkdayjobs.com/wday/cxs/nxp/careers/jobs",
-   "seconds": 0.4
+   "seconds": 0.6
   },
   {
    "name": "Ambarella",
-   "ok": false,
-   "fetched": 0,
-   "kept": 0,
-   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://ambarella.wd108.myworkdayjobs.com/wday/cxs/ambarella/ambarella/jobs",
-   "seconds": 0.1
+   "ok": true,
+   "fetched": 2,
+   "kept": 1,
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 0.9
   },
   {
    "name": "Ciena",
@@ -136,33 +138,34 @@
    "fetched": 0,
    "kept": 0,
    "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://ciena.wd5.myworkdayjobs.com/wday/cxs/ciena/Careers/jobs",
-   "seconds": 0.1
+   "seconds": 0.0
   },
   {
    "name": "Qualcomm",
    "ok": true,
-   "fetched": 122,
+   "fetched": 125,
    "kept": 4,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 8.1
+   "seconds": 7.1
   },
   {
    "name": "Microsoft",
-   "ok": false,
-   "fetched": 0,
+   "ok": true,
+   "fetched": 122,
    "kept": 0,
-   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=intern&location=&start=0&sort_by=timestamp",
-   "seconds": 0.3
+   "matchedSimplify": 0,
+   "error": "",
+   "seconds": 7.2
   },
   {
    "name": "AMD",
    "ok": true,
-   "fetched": 11,
+   "fetched": 12,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 1.1
+   "seconds": 0.6
   },
   {
    "name": "Amazon",
@@ -171,7 +174,7 @@
    "kept": 1,
    "matchedSimplify": 4,
    "error": "",
-   "seconds": 4.8
+   "seconds": 4.2
   },
   {
    "name": "Google",
@@ -180,7 +183,7 @@
    "kept": 2,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 2.3
+   "seconds": 2.7
   },
   {
    "name": "Apple",
@@ -189,25 +192,25 @@
    "kept": 2,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 11.1
+   "seconds": 4.5
   },
   {
    "name": "Arm",
    "ok": true,
-   "fetched": 191,
+   "fetched": 188,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 2.3
+   "seconds": 3.1
   },
   {
    "name": "Texas Instruments",
    "ok": true,
    "fetched": 100,
-   "kept": 8,
-   "matchedSimplify": 0,
+   "kept": 12,
+   "matchedSimplify": 1,
    "error": "",
-   "seconds": 1.6
+   "seconds": 1.9
   },
   {
    "name": "onsemi",
@@ -221,7 +224,7 @@
   {
    "name": "Western Digital",
    "ok": true,
-   "fetched": 75,
+   "fetched": 76,
    "kept": 1,
    "matchedSimplify": 0,
    "error": "",
@@ -239,16 +242,16 @@
   {
    "name": "Cirrus Logic",
    "ok": true,
-   "fetched": 125,
+   "fetched": 126,
    "kept": 6,
    "matchedSimplify": 2,
    "error": "",
-   "seconds": 1.0
+   "seconds": 1.7
   },
   {
    "name": "Astera Labs (Greenhouse asteraearlycareer2027)",
    "ok": true,
-   "fetched": 89,
+   "fetched": 90,
    "kept": 23,
    "matchedSimplify": 0,
    "error": "",
@@ -261,12 +264,12 @@
    "kept": 3,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.0
+   "seconds": 0.1
   },
   {
    "name": "Tenstorrent (Greenhouse tenstorrent)",
    "ok": true,
-   "fetched": 138,
+   "fetched": 145,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
@@ -275,16 +278,16 @@
   {
    "name": "Lightmatter (Greenhouse lightmatter)",
    "ok": true,
-   "fetched": 80,
-   "kept": 7,
-   "matchedSimplify": 4,
+   "fetched": 82,
+   "kept": 4,
+   "matchedSimplify": 6,
    "error": "",
-   "seconds": 0.0
+   "seconds": 0.3
   },
   {
    "name": "SambaNova (Greenhouse sambanovasystems)",
    "ok": true,
-   "fetched": 75,
+   "fetched": 74,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
@@ -293,11 +296,11 @@
   {
    "name": "Samsung Research America (Greenhouse samsungresearchamericainternship)",
    "ok": true,
-   "fetched": 4,
+   "fetched": 5,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.0
+   "seconds": 0.1
   },
   {
    "name": "xAI (Greenhouse xai)",
@@ -306,7 +309,7 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.0
+   "seconds": 0.1
   },
   {
    "name": "Anthropic (Greenhouse anthropic)",
@@ -315,7 +318,7 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.0
+   "seconds": 0.1
   },
   {
    "name": "Etched",
@@ -324,7 +327,7 @@
    "kept": 6,
    "matchedSimplify": 1,
    "error": "",
-   "seconds": 0.1
+   "seconds": 0.3
   },
   {
    "name": "d-Matrix",
@@ -333,7 +336,7 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.2
+   "seconds": 0.1
   },
   {
    "name": "MatX",
@@ -342,21 +345,21 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.0
+   "seconds": 0.2
   },
   {
    "name": "Cerebras",
    "ok": true,
-   "fetched": 128,
+   "fetched": 129,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "name": "OpenAI",
    "ok": true,
-   "fetched": 840,
+   "fetched": 853,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
