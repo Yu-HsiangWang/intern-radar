@@ -1,22 +1,22 @@
 {
- "updatedAt": "2026-11-21T17:39:40Z",
+ "updatedAt": "2026-11-22T17:54:43Z",
  "counts": {
-  "total": 355,
-  "core": 77,
-  "related": 178,
+  "total": 347,
+  "core": 73,
+  "related": 174,
   "stretch": 100,
-  "newToday": 11,
-  "official": 91,
-  "taiwan": 7
+  "newToday": 3,
+  "official": 75,
+  "taiwan": 2
  },
  "sources": [
   {
    "name": "SimplifyJobs",
    "ok": true,
-   "fetched": 284,
-   "kept": 284,
+   "fetched": 286,
+   "kept": 286,
    "error": "",
-   "seconds": 0.5
+   "seconds": 0.4
   },
   {
    "name": "NVIDIA",
@@ -36,12 +36,11 @@
   },
   {
    "name": "Marvell",
-   "ok": true,
-   "fetched": 93,
-   "kept": 6,
-   "matchedSimplify": 7,
-   "error": "",
-   "seconds": 15.5
+   "ok": false,
+   "fetched": 0,
+   "kept": 0,
+   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://marvell.wd1.myworkdayjobs.com/wday/cxs/marvell/MarvellCareers/jobs",
+   "seconds": 0.1
   },
   {
    "name": "Micron",
@@ -73,7 +72,7 @@
    "fetched": 0,
    "kept": 0,
    "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://sec.wd3.myworkdayjobs.com/wday/cxs/sec/Samsung_Careers/jobs",
-   "seconds": 0.5
+   "seconds": 0.6
   },
   {
    "name": "Hewlett Packard Enterprise",
@@ -113,7 +112,7 @@
    "fetched": 0,
    "kept": 0,
    "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://sifive.wd1.myworkdayjobs.com/wday/cxs/sifive/sifivecareers/jobs",
-   "seconds": 0.1
+   "seconds": 0.0
   },
   {
    "name": "NXP",
@@ -130,7 +129,7 @@
    "kept": 1,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.8
+   "seconds": 0.9
   },
   {
    "name": "Ciena",
@@ -142,12 +141,11 @@
   },
   {
    "name": "Qualcomm",
-   "ok": true,
-   "fetched": 124,
-   "kept": 4,
-   "matchedSimplify": 0,
-   "error": "",
-   "seconds": 8.3
+   "ok": false,
+   "fetched": 0,
+   "kept": 0,
+   "error": "HTTPError: 429 Client Error: TOO MANY REQUESTS for url: https://careers.qualcomm.com/api/pcsx/search?domain=qualcomm.com&query=intern&location=&start=0&sort_by=timestamp",
+   "seconds": 0.3
   },
   {
    "name": "Microsoft",
@@ -155,16 +153,16 @@
    "fetched": 0,
    "kept": 0,
    "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=intern&location=&start=0&sort_by=timestamp",
-   "seconds": 0.5
+   "seconds": 0.1
   },
   {
    "name": "AMD",
    "ok": true,
-   "fetched": 12,
+   "fetched": 13,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.5
+   "seconds": 0.7
   },
   {
    "name": "Amazon",
@@ -173,7 +171,7 @@
    "kept": 1,
    "matchedSimplify": 4,
    "error": "",
-   "seconds": 5.2
+   "seconds": 4.1
   },
   {
    "name": "Google",
@@ -182,7 +180,7 @@
    "kept": 2,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 2.5
+   "seconds": 2.6
   },
   {
    "name": "Apple",
@@ -191,7 +189,7 @@
    "kept": 2,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 2.1
+   "seconds": 1.9
   },
   {
    "name": "Arm",
@@ -200,7 +198,7 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 2.3
+   "seconds": 4.4
   },
   {
    "name": "Texas Instruments",
@@ -209,7 +207,7 @@
    "kept": 12,
    "matchedSimplify": 1,
    "error": "",
-   "seconds": 1.6
+   "seconds": 1.7
   },
   {
    "name": "onsemi",
@@ -218,7 +216,7 @@
    "kept": 0,
    "matchedSimplify": 2,
    "error": "",
-   "seconds": 1.6
+   "seconds": 1.7
   },
   {
    "name": "Western Digital",
@@ -245,7 +243,7 @@
    "kept": 6,
    "matchedSimplify": 2,
    "error": "",
-   "seconds": 1.3
+   "seconds": 1.5
   },
   {
    "name": "Astera Labs (Greenhouse asteraearlycareer2027)",
@@ -254,7 +252,7 @@
    "kept": 23,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.2
+   "seconds": 0.1
   },
   {
    "name": "Tenstorrent (Greenhouse tenstorrentuniversity)",
@@ -263,7 +261,7 @@
    "kept": 3,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.1
+   "seconds": 0.0
   },
   {
    "name": "Tenstorrent (Greenhouse tenstorrent)",
@@ -272,7 +270,7 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.1
+   "seconds": 0.0
   },
   {
    "name": "Lightmatter (Greenhouse lightmatter)",
@@ -290,7 +288,7 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.1
+   "seconds": 0.0
   },
   {
    "name": "Samsung Research America (Greenhouse samsungresearchamericainternship)",
@@ -299,7 +297,7 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.1
+   "seconds": 0.0
   },
   {
    "name": "xAI (Greenhouse xai)",
@@ -308,12 +306,12 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.1
+   "seconds": 0.0
   },
   {
    "name": "Anthropic (Greenhouse anthropic)",
    "ok": true,
-   "fetched": 635,
+   "fetched": 633,
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
@@ -326,7 +324,7 @@
    "kept": 6,
    "matchedSimplify": 1,
    "error": "",
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "name": "d-Matrix",
@@ -353,7 +351,7 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.1
+   "seconds": 0.3
   },
   {
    "name": "OpenAI",
@@ -362,7 +360,7 @@
    "kept": 0,
    "matchedSimplify": 0,
    "error": "",
-   "seconds": 0.4
+   "seconds": 0.5
   }
  ]
 }
